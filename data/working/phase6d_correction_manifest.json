@@ -1,0 +1,29 @@
+{
+  "phase": "6D_CORRECTION",
+  "total_records": 1304,
+  "baseline_records": 50,
+  "expansion_records": 1254,
+  "record_modifications": [
+    {
+      "record_id": "tool_8969b379ab76d73c",
+      "field": "description",
+      "reason": "anti_bot_wording_remediation"
+    }
+  ],
+  "categories": {
+    "populated": 50,
+    "empty": 1254,
+    "empty_is_expected": true
+  },
+  "description_grounded": {
+    "true": 50,
+    "false": 1254,
+    "false_does_not_mean_hallucinated": true
+  },
+  "null_descriptions": [
+    "tool_2c49c8c7f351c7aa",
+    "tool_aa1c8c2c233747a0",
+    "tool_ed2336918237aed4",
+    "tool_b827a194350de3da"
+  ]
+}

@@ -1,0 +1,598 @@
+[
+  {
+    "domain": "unclecheng-li.github.io",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_76837f17df506d8c",
+        "name": "VulnClaw",
+        "official_url": "https://unclecheng-li.github.io/vulnclaw.com"
+      },
+      {
+        "id": "tool_6c2d1f1fe7d29280",
+        "name": "DeepSec",
+        "official_url": "https://unclecheng-li.github.io/deepsec.com"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "npmjs.com",
+    "collision_count": 20,
+    "category": "PLATFORM_MARKETPLACE",
+    "associated_tools": [
+      {
+        "id": "tool_b73ee7b1d8d4e864",
+        "name": "cross-code-organizer",
+        "official_url": "https://npmjs.com/package/@mcpware/cross-code-organizer"
+      },
+      {
+        "id": "tool_697130eec5ec23fc",
+        "name": "toktrack",
+        "official_url": "https://npmjs.com/package/toktrack"
+      },
+      {
+        "id": "tool_f8bfdc2a1f813e61",
+        "name": "claude-historian-mcp",
+        "official_url": "https://npmjs.com/package/claude-historian-mcp"
+      },
+      {
+        "id": "tool_c4e87573971bc540",
+        "name": "browser-debugger-cli",
+        "official_url": "https://npmjs.com/package/browser-debugger-cli"
+      },
+      {
+        "id": "tool_aeb614b6378d37b7",
+        "name": "pubmed-mcp-server",
+        "official_url": "https://npmjs.com/package/@cyanheads/pubmed-mcp-server"
+      },
+      {
+        "id": "tool_161c155c569310b4",
+        "name": "opencode-mcp",
+        "official_url": "https://npmjs.com/package/opencode-mcp"
+      },
+      {
+        "id": "tool_00a9fd51cb117770",
+        "name": "obsidian-mcp-server",
+        "official_url": "https://npmjs.com/package/obsidian-mcp-server"
+      },
+      {
+        "id": "tool_86ebbd4d35560b2b",
+        "name": "mercadona-cli",
+        "official_url": "https://npmjs.com/package/@ivorpad/mercadona"
+      },
+      {
+        "id": "tool_60c22b41c471b16d",
+        "name": "OpenLore",
+        "official_url": "https://npmjs.com/package/openlore"
+      },
+      {
+        "id": "tool_b628d3e9cc712b16",
+        "name": "pi-memory",
+        "official_url": "https://npmjs.com/package/pi-memory"
+      },
+      {
+        "id": "tool_55d5e23a4e260f24",
+        "name": "token-goat",
+        "official_url": "https://npmjs.com/package/token-goat"
+      },
+      {
+        "id": "tool_1ed25f965c45ce62",
+        "name": "heimdall",
+        "official_url": "https://npmjs.com/package/@arihantdeva/heimdall"
+      },
+      {
+        "id": "tool_adca5a72cc7aac10",
+        "name": "aside-codemode",
+        "official_url": "https://npmjs.com/package/aside-codemode"
+      },
+      {
+        "id": "tool_5f4aa6eb4108c632",
+        "name": "darknet-mcp-server",
+        "official_url": "https://npmjs.com/package/darknet-mcp-server"
+      },
+      {
+        "id": "tool_d4e658d7c1ee6e04",
+        "name": "opencode-goal-plugin",
+        "official_url": "https://npmjs.com/package/@prevalentware/opencode-goal-plugin"
+      },
+      {
+        "id": "tool_c4938c1288eeb928",
+        "name": "code-abyss",
+        "official_url": "https://npmjs.com/package/code-abyss"
+      },
+      {
+        "id": "tool_2fe19d57c463a9f9",
+        "name": "agenticmail",
+        "official_url": "https://npmjs.com/package/agenticmail"
+      },
+      {
+        "id": "tool_06788f4ac11c77d2",
+        "name": "dao-code",
+        "official_url": "https://npmjs.com/package/dao-code"
+      },
+      {
+        "id": "tool_da30d0fe8b66e2e9",
+        "name": "mulmoclaude",
+        "official_url": "https://npmjs.com/package/mulmoclaude"
+      },
+      {
+        "id": "tool_86da2048cd308bd1",
+        "name": "Misceo",
+        "official_url": "https://npmjs.com/package/@misceo/cli"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "pypi.org",
+    "collision_count": 14,
+    "category": "PLATFORM_MARKETPLACE",
+    "associated_tools": [
+      {
+        "id": "tool_c4c81903b1d1d8b4",
+        "name": "claude-code-usage-bar",
+        "official_url": "https://pypi.org/project/claude-statusbar"
+      },
+      {
+        "id": "tool_53657a8dc08e23be",
+        "name": "mcptoon",
+        "official_url": "https://pypi.org/project/mcptoon"
+      },
+      {
+        "id": "tool_9e49ce6272d6b68d",
+        "name": "skene",
+        "official_url": "https://pypi.org/project/skene"
+      },
+      {
+        "id": "tool_c4b420b5beb7835c",
+        "name": "hcom",
+        "official_url": "https://pypi.org/project/hcom"
+      },
+      {
+        "id": "tool_dacc74c8fc6e03f8",
+        "name": "cozempic",
+        "official_url": "https://pypi.org/project/cozempic"
+      },
+      {
+        "id": "tool_363ef65579526bdc",
+        "name": "wave-mcp",
+        "official_url": "https://pypi.org/project/wave-mcp"
+      },
+      {
+        "id": "tool_4b8e8cf079747e3a",
+        "name": "piia-engram",
+        "official_url": "https://pypi.org/project/piia-engram"
+      },
+      {
+        "id": "tool_40e452cb39ec4d6f",
+        "name": "TraceWeave",
+        "official_url": "https://pypi.org/project/traceweave-mcp"
+      },
+      {
+        "id": "tool_91a9dce0d3c3d944",
+        "name": "NyaProxy",
+        "official_url": "https://pypi.org/project/nya-proxy"
+      },
+      {
+        "id": "tool_d983c9ce097476bd",
+        "name": "Charles-mcp",
+        "official_url": "https://pypi.org/project/charles-mcp"
+      },
+      {
+        "id": "tool_e35726d6f301a8c6",
+        "name": "llama-github",
+        "official_url": "https://pypi.org/project/llama-github"
+      },
+      {
+        "id": "tool_929943c5a4c27341",
+        "name": "Spice",
+        "official_url": "https://pypi.org/project/spice-runtime"
+      },
+      {
+        "id": "tool_55921fe9fd703070",
+        "name": "CoreCoder",
+        "official_url": "https://pypi.org/project/corecoder"
+      },
+      {
+        "id": "tool_a23790db748a85fe",
+        "name": "watch-skill",
+        "official_url": "https://pypi.org/project/watch-skill"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "vadoo.tv",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_fc4630f1e4374a19",
+        "name": "AI-Influencer-Generator",
+        "official_url": "https://vadoo.tv/ai-influencer-generator"
+      },
+      {
+        "id": "tool_c404b18f5dd773c7",
+        "name": "Text-To-Video-AI",
+        "official_url": "https://vadoo.tv/text-to-video-ai"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "kayba.ai",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_9c3dd769d3f95509",
+        "name": "recursive-improve",
+        "official_url": "https://kayba.ai"
+      },
+      {
+        "id": "tool_26ea67c20c97390b",
+        "name": "agentic-context-engine",
+        "official_url": "https://kayba.ai"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "registry.modelcontextprotocol.io",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_da78156ae314c4b4",
+        "name": "mcp-shodan",
+        "official_url": "https://registry.modelcontextprotocol.io"
+      },
+      {
+        "id": "tool_aefdb7adbe033b8c",
+        "name": "mcp-virustotal",
+        "official_url": "https://registry.modelcontextprotocol.io"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "alibaba.github.io",
+    "collision_count": 3,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_398a4239f12f55d4",
+        "name": "app-controller",
+        "official_url": "https://alibaba.github.io/app-controller"
+      },
+      {
+        "id": "tool_01850232fd3e60ee",
+        "name": "UnifiedModel",
+        "official_url": "https://alibaba.github.io/UnifiedModel"
+      },
+      {
+        "id": "tool_f7e183b053d6d7cc",
+        "name": "page-agent",
+        "official_url": "https://alibaba.github.io/page-agent"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "medium.com",
+    "collision_count": 3,
+    "category": "THIRD_PARTY_BLOG_HUB",
+    "associated_tools": [
+      {
+        "id": "tool_bc772b91c988c9fc",
+        "name": "claude-code-skill-factory",
+        "official_url": "https://medium.com/@alirezarezvani/the-claude-skills-factory-how-you-can-generate-production-ready-ai-tools-in-15-minutes-eb0b86087f31?sk=4c0f7e762b9d7caf49d4234a978f3b0a"
+      },
+      {
+        "id": "tool_4cbeaf44b67ff06a",
+        "name": "Multi-Agent-AI-System",
+        "official_url": "https://medium.com/@fareedkhandev/6cb70487cd81"
+      },
+      {
+        "id": "tool_1d8aa8d5284fdf01",
+        "name": "optimize-ai-agent-memory",
+        "official_url": "https://medium.com/@fareedkhandev/optimizing-memory-of-ai-agents-for-better-performance-using-67d813e3d796"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "versusincident.com",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_aa727b82f89ed9cd",
+        "name": "versus-incident",
+        "official_url": "https://versusincident.com"
+      },
+      {
+        "id": "tool_1132573430ec7b11",
+        "name": "devops-ai-guidelines",
+        "official_url": "https://versusincident.com"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "ataraxy-labs.github.io",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_f0984e9aee33beae",
+        "name": "sem",
+        "official_url": "https://ataraxy-labs.github.io/sem"
+      },
+      {
+        "id": "tool_1d752309b04ced37",
+        "name": "weave",
+        "official_url": "https://ataraxy-labs.github.io/weave"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "arxiv.org",
+    "collision_count": 9,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_50d38ff5e2cd4b4b",
+        "name": "Memslides",
+        "official_url": "https://arxiv.org/abs/2606.17162"
+      },
+      {
+        "id": "tool_9e0e78272fd83f23",
+        "name": "LoongFlow",
+        "official_url": "https://arxiv.org/abs/2512.24077"
+      },
+      {
+        "id": "tool_6d54d142c09149cc",
+        "name": "MoleCode",
+        "official_url": "https://arxiv.org/pdf/2605.16480"
+      },
+      {
+        "id": "tool_a2b9ca19f583708c",
+        "name": "MetaClaw",
+        "official_url": "https://arxiv.org/abs/2603.17187"
+      },
+      {
+        "id": "tool_5034b8d979fb7222",
+        "name": "TradingAgents-astock",
+        "official_url": "https://arxiv.org/pdf/2412.20138"
+      },
+      {
+        "id": "tool_d375950c4a36df9d",
+        "name": "auto-deep-researcher-24x7",
+        "official_url": "https://arxiv.org/abs/2604.05854"
+      },
+      {
+        "id": "tool_af08ab8ae4f711c3",
+        "name": "doc-to-lora",
+        "official_url": "https://arxiv.org/abs/2602.15902"
+      },
+      {
+        "id": "tool_5ea90510dcde127d",
+        "name": "TapeAgents",
+        "official_url": "https://arxiv.org/abs/2412.08445"
+      },
+      {
+        "id": "tool_a8bf604ad409963d",
+        "name": "DeepTutor",
+        "official_url": "http://arxiv.org/abs/2604.26962"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "evoscientist.ai",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_d7ef8c642577c37e",
+        "name": "EvoSkills",
+        "official_url": "https://evoscientist.ai"
+      },
+      {
+        "id": "tool_65e68fff7fb73ae3",
+        "name": "EvoScientist",
+        "official_url": "https://evoscientist.ai"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "keyid.ai",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_9da39ed79b55b2fb",
+        "name": "sdk-js",
+        "official_url": "https://keyid.ai"
+      },
+      {
+        "id": "tool_d0c0578546e9dc02",
+        "name": "sdk-py",
+        "official_url": "https://keyid.ai"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "t.me",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_469857e43f2b1e28",
+        "name": "NeuralDeskApp",
+        "official_url": "https://t.me/neuraldeep"
+      },
+      {
+        "id": "tool_5450055390dcdb81",
+        "name": "agent-second-brain",
+        "official_url": "https://t.me/aimastersme"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "discord.gg",
+    "collision_count": 3,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_eb728ceaaf4322f0",
+        "name": "ZeroScript-Free",
+        "official_url": "https://discord.gg/D5G2HAzX8z"
+      },
+      {
+        "id": "tool_390c03b7915b9b49",
+        "name": "agent-deck",
+        "official_url": "https://discord.gg/e4xSs6NBN8"
+      },
+      {
+        "id": "tool_88a47f13e953dfe2",
+        "name": "tradingcodex",
+        "official_url": "https://discord.gg/Wr25KZnabh"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "x.com",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_8cce341765afc2d1",
+        "name": "mue-x",
+        "official_url": "https://x.com/korro_ai"
+      },
+      {
+        "id": "tool_8f415346cbfeb85b",
+        "name": "mentals-ai",
+        "official_url": "https://x.com/mentals_ai"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "ianneo.xyz",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_3d2580ee27558499",
+        "name": "ian-xiaohei-illustrations",
+        "official_url": "https://ianneo.xyz"
+      },
+      {
+        "id": "tool_058890f4559a51f8",
+        "name": "ian-handdrawn-ppt",
+        "official_url": "https://ianneo.xyz"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "zenstory.ai",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_61d95232dd9cf3ea",
+        "name": "oh-story-claudecode",
+        "official_url": "https://zenstory.ai/oh-story"
+      },
+      {
+        "id": "tool_2983781c1e558d61",
+        "name": "oh-story-dsh",
+        "official_url": "https://zenstory.ai/dsh"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "k-dense.ai",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_e4161bc96a1684af",
+        "name": "k-dense-byok",
+        "official_url": "https://k-dense.ai"
+      },
+      {
+        "id": "tool_ad36714d54624472",
+        "name": "science-superpowers",
+        "official_url": "https://k-dense.ai"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "awizemann.github.io",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_c9a5df5cf3da8845",
+        "name": "scarf",
+        "official_url": "https://awizemann.github.io/scarf"
+      },
+      {
+        "id": "tool_06fb10099f6bc657",
+        "name": "harness",
+        "official_url": "https://awizemann.github.io/harness"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "datadrivenconstruction.io",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_e480637c79d4c2e3",
+        "name": "cad2data-Revit-IFC-DWG-DGN",
+        "official_url": "https://datadrivenconstruction.io"
+      },
+      {
+        "id": "tool_cbf1c1160c677318",
+        "name": "DDC_Skills_for_AI_Agents_in_Construction",
+        "official_url": "https://datadrivenconstruction.io"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  },
+  {
+    "domain": "docs.langchain.com",
+    "collision_count": 2,
+    "category": "SHARED_ORGANIZATION_DOMAIN",
+    "associated_tools": [
+      {
+        "id": "tool_eba64c6705fd8f48",
+        "name": "langchain",
+        "official_url": "https://docs.langchain.com/langchain"
+      },
+      {
+        "id": "tool_bdc8dd79294d85d4",
+        "name": "langgraph",
+        "official_url": "https://docs.langchain.com/oss/python/langgraph"
+      }
+    ],
+    "recommendation": "PRESERVE_DISTINCT_ENTITIES_DO_NOT_MERGE"
+  }
+]

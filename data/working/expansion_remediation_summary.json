@@ -1,0 +1,567 @@
+{
+  "raw_candidates_discovered": 1500,
+  "old_qualified_count": 1314,
+  "new_qualified_count": 1254,
+  "new_review_count": 90,
+  "new_rejected_count": 80,
+  "baseline_duplicates": 0,
+  "intra_expansion_duplicates": 0,
+  "new_unique_expansion_count": 1254,
+  "total_working_dataset_count": 1304,
+  "old_qualified_to_new_rejected_count": 54,
+  "old_qualified_to_new_review_count": 6,
+  "old_qualified_still_qualified_count": 1254,
+  "old_qualified_to_new_rejected": [
+    {
+      "name": "alice",
+      "github_url": "https://github.com/simoncirstoiu/alice",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: dataset"
+      ]
+    },
+    {
+      "name": "ollama-benchmark",
+      "github_url": "https://github.com/aidatatools/ollama-benchmark",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative name pattern: [\\-_]benchmark[s]?$",
+        "Hard negative topics: benchmark"
+      ]
+    },
+    {
+      "name": "awesome-ai-tools",
+      "github_url": "https://github.com/pingan8787/awesome-ai-tools",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative name pattern: ^awesome[\\-_]"
+      ]
+    },
+    {
+      "name": "pentest-reports",
+      "github_url": "https://github.com/reconmap/pentest-reports",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bcollection\\s+of\\b'"
+      ]
+    },
+    {
+      "name": "chengos",
+      "github_url": "https://github.com/chengrouter/chengos",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bresources?\\s+for\\b'"
+      ]
+    },
+    {
+      "name": "skills",
+      "github_url": "https://github.com/dagster-io/skills",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bcollection\\s+of\\b'"
+      ]
+    },
+    {
+      "name": "gingiris-launch",
+      "github_url": "https://github.com/Gingiris/gingiris-launch",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: awesome"
+      ]
+    },
+    {
+      "name": "toolsdk-mcp-registry",
+      "github_url": "https://github.com/toolsdk-ai/toolsdk-mcp-registry",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: awesome, awesome-list, awesome-lists"
+      ]
+    },
+    {
+      "name": "ai-toolkit",
+      "github_url": "https://github.com/MikeBirdTech/ai-toolkit",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bcollection\\s+of\\b'"
+      ]
+    },
+    {
+      "name": "free-ai-bible",
+      "github_url": "https://github.com/abbosaliboev/free-ai-bible",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: awesome-list"
+      ]
+    },
+    {
+      "name": "TopAutomationTools",
+      "github_url": "https://github.com/iamramanarora/TopAutomationTools",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bcurated\\s+list\\b'"
+      ]
+    },
+    {
+      "name": "list-ai-extensions-chrome-addons-firefox",
+      "github_url": "https://github.com/yousefebrahimi0/list-ai-extensions-chrome-addons-firefox",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\blist\\s+of\\b'"
+      ]
+    },
+    {
+      "name": "router-vpn",
+      "github_url": "https://github.com/wybzsngw/router-vpn",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorial"
+      ]
+    },
+    {
+      "name": "haystack-integrations",
+      "github_url": "https://github.com/deepset-ai/haystack-integrations",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\blist\\s+of\\b'"
+      ]
+    },
+    {
+      "name": "riseofmachine",
+      "github_url": "https://github.com/planetabhi/riseofmachine",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: awesome-list"
+      ]
+    },
+    {
+      "name": "site-for-developers",
+      "github_url": "https://github.com/currenjin/site-for-developers",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: awesome-list"
+      ]
+    },
+    {
+      "name": "best-of-Agent-Harnesses",
+      "github_url": "https://github.com/RyanAlberts/best-of-Agent-Harnesses",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\blist\\s+of\\b'",
+        "Hard negative topics: awesome-list"
+      ]
+    },
+    {
+      "name": "AITreasureBox",
+      "github_url": "https://github.com/superiorlu/AITreasureBox",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: awesome-list"
+      ]
+    },
+    {
+      "name": "free-ai-coding",
+      "github_url": "https://github.com/inmve/free-ai-coding",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: awesome-list"
+      ]
+    },
+    {
+      "name": "awesome-ai-persona-skills",
+      "github_url": "https://github.com/momozi1996/awesome-ai-persona-skills",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative name pattern: ^awesome[\\-_]"
+      ]
+    },
+    {
+      "name": "agentic-ai-apis",
+      "github_url": "https://github.com/cporter202/agentic-ai-apis",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bcollection\\s+of\\b'"
+      ]
+    },
+    {
+      "name": "agent-craft",
+      "github_url": "https://github.com/Annyfee/agent-craft",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorial"
+      ]
+    },
+    {
+      "name": "fullstack-ai-agent-roadmap",
+      "github_url": "https://github.com/Karovia/fullstack-ai-agent-roadmap",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorial"
+      ]
+    },
+    {
+      "name": "openclaw-optimization-guide",
+      "github_url": "https://github.com/OnlyTerp/openclaw-optimization-guide",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorial"
+      ]
+    },
+    {
+      "name": "ResearchClawBench",
+      "github_url": "https://github.com/InternScience/ResearchClawBench",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: benchmark"
+      ]
+    },
+    {
+      "name": "pi-bluebook",
+      "github_url": "https://github.com/xiaomoBoy/pi-bluebook",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorial"
+      ]
+    },
+    {
+      "name": "FindJobs-Agent",
+      "github_url": "https://github.com/he-yufeng/FindJobs-Agent",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: interview"
+      ]
+    },
+    {
+      "name": "myclaw-bench",
+      "github_url": "https://github.com/LeoYeAI/myclaw-bench",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: benchmark"
+      ]
+    },
+    {
+      "name": "vibe-coding-cn",
+      "github_url": "https://github.com/tradecatlabs/vibe-coding-cn",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorial"
+      ]
+    },
+    {
+      "name": "AgentGuide",
+      "github_url": "https://github.com/adongwanai/AgentGuide",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: interview, tutorial"
+      ]
+    },
+    {
+      "name": "ai-agents-from-zero",
+      "github_url": "https://github.com/didilili/ai-agents-from-zero",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorial"
+      ]
+    },
+    {
+      "name": "anything_about_game",
+      "github_url": "https://github.com/killop/anything_about_game",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\blist\\s+of\\b'",
+        "Hard negative topics: awesome-list"
+      ]
+    },
+    {
+      "name": "AI_Tutorial",
+      "github_url": "https://github.com/cbamls/AI_Tutorial",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative name pattern: [\\-_]tutorial[s]?$"
+      ]
+    },
+    {
+      "name": "claude-code-from-scratch",
+      "github_url": "https://github.com/Windy3f3f3f3f/claude-code-from-scratch",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorial"
+      ]
+    },
+    {
+      "name": "openclaw-master-skills",
+      "github_url": "https://github.com/LeoYeAI/openclaw-master-skills",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bcollection\\s+of\\b'"
+      ]
+    },
+    {
+      "name": "build-your-own-openclaw",
+      "github_url": "https://github.com/czl9707/build-your-own-openclaw",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorial"
+      ]
+    },
+    {
+      "name": "Thinking_in_Java_MindMapping",
+      "github_url": "https://github.com/LjyYano/Thinking_in_Java_MindMapping",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: interview"
+      ]
+    },
+    {
+      "name": "GLM-5.3-Flash-J-Space-Capability-Realization-Report",
+      "github_url": "https://github.com/Tiger3807861189/GLM-5.3-Flash-J-Space-Capability-Realization-Report",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: benchmark"
+      ]
+    },
+    {
+      "name": "MakeMoneyWithAI",
+      "github_url": "https://github.com/garylab/MakeMoneyWithAI",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\blist\\s+of\\b'"
+      ]
+    },
+    {
+      "name": "claude-code-skills-zh",
+      "github_url": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: awesome-list"
+      ]
+    },
+    {
+      "name": "Agentic-AI-Systems",
+      "github_url": "https://github.com/alirezadir/Agentic-AI-Systems",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bresources?\\s+for\\b'"
+      ]
+    },
+    {
+      "name": "everything-ai-ml",
+      "github_url": "https://github.com/viveknaskar/everything-ai-ml",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bcollection\\s+of\\b'"
+      ]
+    },
+    {
+      "name": "latex-arxiv-SKILL",
+      "github_url": "https://github.com/appautomaton/latex-arxiv-SKILL",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: research-paper"
+      ]
+    },
+    {
+      "name": "opendraft",
+      "github_url": "https://github.com/federicodeponte/opendraft",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: research-paper"
+      ]
+    },
+    {
+      "name": "opencode-primer",
+      "github_url": "https://github.com/wesammustafa/opencode-primer",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorial"
+      ]
+    },
+    {
+      "name": "aaabench",
+      "github_url": "https://github.com/ukanwat/aaabench",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: benchmark"
+      ]
+    },
+    {
+      "name": "ai-engineering-cheatsheets",
+      "github_url": "https://github.com/louisfb01/ai-engineering-cheatsheets",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative name pattern: [\\-_]cheatsheet[s]?$"
+      ]
+    },
+    {
+      "name": "voiceai",
+      "github_url": "https://github.com/mahimairaja/voiceai",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: awesome, awesome-list"
+      ]
+    },
+    {
+      "name": "Prompt-Engineering-Guide",
+      "github_url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bresources?\\s+for\\b'"
+      ]
+    },
+    {
+      "name": "ai-engineering-from-scratch",
+      "github_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: course, tutorial"
+      ]
+    },
+    {
+      "name": "ai-job-search",
+      "github_url": "https://github.com/MadsLorentzen/ai-job-search",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: interview-preparation"
+      ]
+    },
+    {
+      "name": "500-AI-Agents-Projects",
+      "github_url": "https://github.com/ashishpatel26/500-AI-Agents-Projects",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative description pattern: '\\bcollection\\s+of\\b'"
+      ]
+    },
+    {
+      "name": "GenAI_Agents",
+      "github_url": "https://github.com/NirDiamant/GenAI_Agents",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorials"
+      ]
+    },
+    {
+      "name": "agents-towards-production",
+      "github_url": "https://github.com/NirDiamant/agents-towards-production",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REJECTED_NON_TOOL",
+      "reasons": [
+        "Hard negative topics: tutorials"
+      ]
+    }
+  ],
+  "old_qualified_to_new_review": [
+    {
+      "name": "PaperQuay",
+      "github_url": "https://github.com/WangQrkkk/PaperQuay",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REVIEW_REQUIRED",
+      "reasons": [
+        "Hard negative topics: paper",
+        "Positive topics: agent, ai-tools, desktop-app"
+      ]
+    },
+    {
+      "name": "paper-craft-skills",
+      "github_url": "https://github.com/zsyggg/paper-craft-skills",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REVIEW_REQUIRED",
+      "reasons": [
+        "Soft negative topics: arxiv",
+        "Positive topics: ai-tools"
+      ]
+    },
+    {
+      "name": "vibe-coding-prompt-template",
+      "github_url": "https://github.com/KhazP/vibe-coding-prompt-template",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REVIEW_REQUIRED",
+      "reasons": [
+        "Soft negative name pattern: [\\-_]template[s]?$",
+        "Positive topics: ai-agents, developer-tools, llm-tools"
+      ]
+    },
+    {
+      "name": "hermes-agent-template",
+      "github_url": "https://github.com/praveen-ks-2001/hermes-agent-template",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REVIEW_REQUIRED",
+      "reasons": [
+        "Soft negative name pattern: [\\-_]template[s]?$",
+        "Positive topics: ai-agent"
+      ]
+    },
+    {
+      "name": "knowledge-agent-template",
+      "github_url": "https://github.com/vercel-labs/knowledge-agent-template",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REVIEW_REQUIRED",
+      "reasons": [
+        "Soft negative name pattern: [\\-_]template[s]?$",
+        "Positive topics: agents, ai-agent, chatbot"
+      ]
+    },
+    {
+      "name": "personal-agent-template",
+      "github_url": "https://github.com/vercel-labs/personal-agent-template",
+      "old_decision": "QUALIFIED_TOOL",
+      "new_decision": "REVIEW_REQUIRED",
+      "reasons": [
+        "Soft negative name pattern: [\\-_]template[s]?$",
+        "Positive topics: ai-agents"
+      ]
+    }
+  ]
+}

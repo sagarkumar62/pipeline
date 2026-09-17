@@ -1,0 +1,41 @@
+{
+  "status": "PHASE5A_RECONCILED_WITH_REVIEW_ITEMS",
+  "contradiction_resolutions": {
+    "browser_use_description": {
+      "pre_phase4d_description": "It provides agents that use the browser.",
+      "final_canonical_description": "It provides agents that use the browser.",
+      "description_length": 40,
+      "phase4d_audit_csv_description": "It provides agents that use the browser.",
+      "resolution": "Phase 4D retained the grounded 40-character description during runner fallback. tools.json matches phase4d_description_remediation.csv 100%. The textual walkthrough was a narrative artifact; tools.json on disk is accurate and consistent."
+    },
+    "logo_verification_count": {
+      "verified_official_logos": 35,
+      "total_logo_urls_present": 50,
+      "resolution": "The walkthrough claimed 50/50 logos present (field populated), while the audit correctly reported 35/50 (70%) verified official logos (logo_verified == True). Both metrics are reconciled."
+    }
+  },
+  "url_classification_summary": {
+    "OFFICIAL_EXTERNAL_WEBSITE": 36,
+    "MISSING": 14
+  },
+  "logo_classification_summary": {
+    "OFFICIAL_SITE_ASSET": 35,
+    "SOCIAL_PREVIEW": 12,
+    "THIRD_PARTY": 2,
+    "GITHUB_ASSET": 1
+  },
+  "export_format_consistency": {
+    "json_records": 50,
+    "jsonl_records": 50,
+    "csv_records": 50,
+    "exact_field_agreement": true,
+    "mismatches": 0
+  },
+  "phase4d_target_reconciliation": {
+    "records_audited": 9,
+    "records_matching_phase4d_csv": 9,
+    "mismatches": 0
+  },
+  "review_items_count": 6,
+  "blocking_issues_count": 0
+}

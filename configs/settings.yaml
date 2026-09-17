@@ -1,0 +1,52 @@
+pipeline:
+  module: tools
+  initial_target: 200
+  batch_size: 50
+  max_concurrency: 20
+
+verification:
+  timeout_seconds: 10
+  follow_redirects: true
+  user_agent: "AI-Orbit-Ingestion-Bot/1.0 (+https://ai-orbit.org)"
+
+deduplication:
+  fuzzy_threshold: 88.0
+
+llm:
+  provider_fallback:
+    - gemini
+    - groq
+    - deepseek
+  max_input_chars: 4000
+  max_output_tokens: 250
+  temperature: 0.1
+
+retry:
+  max_attempts: 3
+  base_delay: 1.0
+  max_delay: 30.0
+
+readme:
+  max_chars: 5000
+
+taxonomy:
+  categories:
+    - Productivity
+    - Developer Tools
+    - Coding
+    - Writing
+    - Design
+    - Video
+    - Audio
+    - Research
+    - Marketing
+    - Education
+    - Data Analysis
+    - Automation
+    - Customer Support
+    - Image Generation
+    - AI Assistants
+    - Models
+    - Agents
+    - MCP
+    - Creative

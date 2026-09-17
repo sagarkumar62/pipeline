@@ -1,0 +1,359 @@
+{
+  "baseline_file": "data\\exports\\tools.json",
+  "record_count": 50,
+  "file_sha256": "4520014c9a1676f9090be806087a92ac0e12fef3d3136a95860cff48388ff2a1",
+  "file_size_bytes": 146200,
+  "created_at": "2026-09-17T09:55:00Z",
+  "records": [
+    {
+      "id": "tool_7e75f3f9311ae674",
+      "name": "cc-switch",
+      "official_url": "https://ccswitch.io",
+      "github_repo_url": "https://github.com/farion1231/cc-switch",
+      "signature": "b579d6136b0483731597991f66a8e2457cade81f3a0ef6c72876b9ed994e858e"
+    },
+    {
+      "id": "tool_22722e523af215ba",
+      "name": "browser-use",
+      "official_url": "https://browser-use.com",
+      "github_repo_url": "https://github.com/browser-use/browser-use",
+      "signature": "1690e5240d88bc0899502d445a9f378d5bc9e8d0c76530f0583a4626a102898a"
+    },
+    {
+      "id": "tool_2399ec7b5d329f9d",
+      "name": "private-gpt",
+      "official_url": "https://zylon.ai/private-gpt",
+      "github_repo_url": "https://github.com/zylon-ai/private-gpt",
+      "signature": "3bc9e7dc01632ee79ac65c3a4f9487d1c9bc2822b81d26b7306282cb93683155"
+    },
+    {
+      "id": "tool_8b2c97aaa1521199",
+      "name": "medusa",
+      "official_url": "https://medusajs.com",
+      "github_repo_url": "https://github.com/medusajs/medusa",
+      "signature": "e8fcdf38a38dc76f87e26d0a9b7d1cf0f5e14c33a312169bbbbbb87209715827"
+    },
+    {
+      "id": "tool_c51aea0eca994fff",
+      "name": "prompt-optimizer",
+      "official_url": "https://prompt.always200.com",
+      "github_repo_url": "https://github.com/linshenkx/prompt-optimizer",
+      "signature": "eeef7f690ba2d636acb6cbcaefebff7bb0dab306214be26d5738055fa2488a9b"
+    },
+    {
+      "id": "tool_aef70ac495a46702",
+      "name": "openclaude",
+      "official_url": "https://openclaude.gitlawb.com",
+      "github_repo_url": "https://github.com/Gitlawb/openclaude",
+      "signature": "f5f5ee274d8e92f11437902227de0de2670d50b35eebc49b692ad932e3fcc4c1"
+    },
+    {
+      "id": "tool_c04c906beeb2f6f3",
+      "name": "OpenCLI",
+      "official_url": "https://opencli.info",
+      "github_repo_url": "https://github.com/jackwener/OpenCLI",
+      "signature": "7c7739f1d0eafdf52400385d3c39c284ec0b50165773ec2abb5ce84049544163"
+    },
+    {
+      "id": "tool_61ad2538f0c3bb2a",
+      "name": "nocobase",
+      "official_url": "https://nocobase.com",
+      "github_repo_url": "https://github.com/nocobase/nocobase",
+      "signature": "27cfe1efdc756885e7e5f9a7cd897bb35d5a15645bae4b64d7e9a12fe3231b93"
+    },
+    {
+      "id": "tool_bd430e11fad5b7fa",
+      "name": "Auto-claude-code-research-in-sleep",
+      "official_url": "",
+      "github_repo_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+      "signature": "b91eb57ac470be531cc7def5b664387225db743a3acc99803b156ac6fe23edc3"
+    },
+    {
+      "id": "tool_dee87fe28e66478b",
+      "name": "opencodex",
+      "official_url": "https://opencodex.me",
+      "github_repo_url": "https://github.com/lidge-jun/opencodex",
+      "signature": "db504b7b3d5b5ea13d14a68b85a42d09482bbea26670e9873abad3554caa2cbe"
+    },
+    {
+      "id": "tool_8ff2b861cf4f58ee",
+      "name": "nanobrowser",
+      "official_url": "https://nanobrowser.ai",
+      "github_repo_url": "https://github.com/nanobrowser/nanobrowser",
+      "signature": "cd9361d99609ba69689cf0ef92d2d9d6a4b24ab3adf70e58d1e45e2dba0a5c12"
+    },
+    {
+      "id": "tool_9c4d972cc4034652",
+      "name": "ccstatusline",
+      "official_url": "",
+      "github_repo_url": "https://github.com/sirmalloc/ccstatusline",
+      "signature": "a050d3542a6871f9a090290fc676aff8ceafdc0c4c18364302f4bef9b7d294c2"
+    },
+    {
+      "id": "tool_fe37e69165cb39d9",
+      "name": "ChatGPT-Shortcut",
+      "official_url": "https://aishort.top/en",
+      "github_repo_url": "https://github.com/rockbenben/ChatGPT-Shortcut",
+      "signature": "5dd603174b766d97010c548dce6574e4ffb13314a9e85d67777f4bad4cecae06"
+    },
+    {
+      "id": "tool_d08a330a85e233ab",
+      "name": "steel-browser",
+      "official_url": "https://steel.dev",
+      "github_repo_url": "https://github.com/steel-dev/steel-browser",
+      "signature": "fd40730cd837e5946a4dce9745729a366eae1974278aa30b9d19df12229fab98"
+    },
+    {
+      "id": "tool_d7e17d8a9f4acacc",
+      "name": "modly",
+      "official_url": "https://modly3d.app",
+      "github_repo_url": "https://github.com/lightningpixel/modly",
+      "signature": "9654f1cddef60cd4a894ca2c9f44d09589c53a6c08bc18f18c7433f83a9f8c8f"
+    },
+    {
+      "id": "tool_740d362d12f4908b",
+      "name": "autoclip",
+      "official_url": "https://zhouxiaoka.github.io/autoclip_intro",
+      "github_repo_url": "https://github.com/zhouxiaoka/autoclip",
+      "signature": "4d4a9cbe77ebe6d231013c1f019c51ac262a33a397b078fc8b1f77e06cb6743e"
+    },
+    {
+      "id": "tool_f9a8f19eff136d6e",
+      "name": "FunClip",
+      "official_url": "https://huggingface.co/spaces/FunAudioLLM/FunClip",
+      "github_repo_url": "https://github.com/modelscope/FunClip",
+      "signature": "d0d4d3d9e2ad891a3d615cc3a90b9398ca792a8dd140f799670d01ee640b5ad6"
+    },
+    {
+      "id": "tool_a7be506c8c90cf37",
+      "name": "quotio",
+      "official_url": "https://quotio.dev",
+      "github_repo_url": "https://github.com/nguyenphutrong/quotio",
+      "signature": "08c561dc5ce7d91879b7aad4340a155e72562a39b4282c6a93cabc14e339d61b"
+    },
+    {
+      "id": "tool_abe3fb74d529db6b",
+      "name": "poster-design",
+      "official_url": "https://design.palxp.cn",
+      "github_repo_url": "https://github.com/palxiao/poster-design",
+      "signature": "6112b19e431738029d36d571e102b25d2177c160c4146e5e251ccbc8f1a5d349"
+    },
+    {
+      "id": "tool_76bdee9cf6429dcd",
+      "name": "logfire",
+      "official_url": "https://pydantic.dev/logfire",
+      "github_repo_url": "https://github.com/pydantic/logfire",
+      "signature": "cea231ea4d63983a6019b0633f5ed96012584acd106edd93c99ca4581d1519fe"
+    },
+    {
+      "id": "tool_9d15ee538baca472",
+      "name": "judge0",
+      "official_url": "https://judge0.com",
+      "github_repo_url": "https://github.com/judge0/judge0",
+      "signature": "d2758a8690e4a4bfdafb177ce407349f18c97591becc8bc10f74acf34f581f6e"
+    },
+    {
+      "id": "tool_f6dba713ec1614e4",
+      "name": "claude-devtools",
+      "official_url": "https://claude-dev.tools",
+      "github_repo_url": "https://github.com/matt1398/claude-devtools",
+      "signature": "030a1df2728582f5f0b7ffc666ac0c4e904964241abf8c070270e0c409f4fa46"
+    },
+    {
+      "id": "tool_2533134dbcce5d26",
+      "name": "tutti",
+      "official_url": "https://tutti.sh",
+      "github_repo_url": "https://github.com/tutti-os/tutti",
+      "signature": "de820a3282ba8e763a0427056e4b5dfc39a340f984f6ebae64322b4fac6cd96b"
+    },
+    {
+      "id": "tool_efcd461b9ec40802",
+      "name": "pinme",
+      "official_url": "https://pinme.eth.limo",
+      "github_repo_url": "https://github.com/glitternetwork/pinme",
+      "signature": "2e2d4033008639129208ce5bbd3184c1f8b15628898ecb7b7a8496494e73c95b"
+    },
+    {
+      "id": "tool_d10ac25ba2ebd643",
+      "name": "anything-analyzer",
+      "official_url": "",
+      "github_repo_url": "https://github.com/Mouseww/anything-analyzer",
+      "signature": "0ecb5b4383b4eef9285ae76c1e12c9aa2ee5162db8c980b7be34348a7f11e1a6"
+    },
+    {
+      "id": "tool_06b2795a2ecbeb54",
+      "name": "llm-wiki-agent",
+      "official_url": "",
+      "github_repo_url": "https://github.com/SamurAIGPT/llm-wiki-agent",
+      "signature": "e877d13a10a090aa42cfd85d0043a46835e85b7c297f0b3e99a71a831c83b62a"
+    },
+    {
+      "id": "tool_76837f17df506d8c",
+      "name": "VulnClaw",
+      "official_url": "https://unclecheng-li.github.io/vulnclaw.com",
+      "github_repo_url": "https://github.com/Netw0rkNoob/VulnClaw",
+      "signature": "ac55a8b36fe00fc724457182d88a0d0d81b9fa5b307f92f4190580c36834b110"
+    },
+    {
+      "id": "tool_0db13fe3eb3e0eb6",
+      "name": "any-auto-register",
+      "official_url": "",
+      "github_repo_url": "https://github.com/lxf746/any-auto-register",
+      "signature": "3238af0bb53ebf15c57eabc33031ed43b08e3c0cdf4619844e8ac5b65fcd5175"
+    },
+    {
+      "id": "tool_c006703a2795d033",
+      "name": "claude-tap",
+      "official_url": "",
+      "github_repo_url": "https://github.com/liaohch3/claude-tap",
+      "signature": "a7eeb2224317a625d2d8c6b448d1306427a6b36d5e8c0c2350ecf0f527b63260"
+    },
+    {
+      "id": "tool_d1179244828ac03d",
+      "name": "open-terminal",
+      "official_url": "https://openterminal.sh",
+      "github_repo_url": "https://github.com/open-webui/open-terminal",
+      "signature": "479ccedcb3006f20aec05166de4c9e165f329a11c86556d317e2255837875c62"
+    },
+    {
+      "id": "tool_54d8589967f974ed",
+      "name": "tuicr",
+      "official_url": "https://tuicr.dev",
+      "github_repo_url": "https://github.com/agavra/tuicr",
+      "signature": "b43e39311f910984ea84a17e9280b5b08ffbce95635ae814a900256098a8212b"
+    },
+    {
+      "id": "tool_b46f91ff30a7904b",
+      "name": "humanize-text",
+      "official_url": "https://lynote.ai/ai-humanizer",
+      "github_repo_url": "https://github.com/lynote-ai/humanize-text",
+      "signature": "efec93efa894ae03669e8873afb4cbeb4956dfb6901e8de9ddf9256a38285f99"
+    },
+    {
+      "id": "tool_8e07d3b4f9d247e1",
+      "name": "daily-arXiv-ai-enhanced",
+      "official_url": "https://arxiv.dw-dengwei.cn",
+      "github_repo_url": "https://github.com/dw-dengwei/daily-arXiv-ai-enhanced",
+      "signature": "b21d3828eac3879747b90c85887c0b819005554125a48186621db5f2762e8e91"
+    },
+    {
+      "id": "tool_439834253697f9a5",
+      "name": "clawpanel",
+      "official_url": "https://claw.qt.cool",
+      "github_repo_url": "https://github.com/qingchencloud/clawpanel",
+      "signature": "9ab92975b7935cc1e1b8af26b6b92a67985a0e9a684d479a94f795b89860e73b"
+    },
+    {
+      "id": "tool_8a605eaed337460b",
+      "name": "designer-skills",
+      "official_url": "",
+      "github_repo_url": "https://github.com/Owl-Listener/designer-skills",
+      "signature": "8b1e8b3983aaa10780424bd30a497b4badb3c41c7fef76adfe42cd7d87e9c730"
+    },
+    {
+      "id": "tool_895e065ce1a04628",
+      "name": "oh-my-hermes",
+      "official_url": "https://rlaope.github.io/oh-my-hermes",
+      "github_repo_url": "https://github.com/rlaope/oh-my-hermes",
+      "signature": "2deb23b359ef1e00a1b603ff7545f96f56b9d8862ddee938c20cc244827fa434"
+    },
+    {
+      "id": "tool_baf31e07d6442efa",
+      "name": "Data-Analysis-Agent",
+      "official_url": "",
+      "github_repo_url": "https://github.com/Zafer-Liu/Data-Analysis-Agent",
+      "signature": "5339bd87ec0659bda203636ef8395d15a9e89e7590df907ceed262b2d5782e28"
+    },
+    {
+      "id": "tool_b28d0519e53bc790",
+      "name": "lanhu-mcp",
+      "official_url": "",
+      "github_repo_url": "https://github.com/dsphper/lanhu-mcp",
+      "signature": "3f34990db1e0cb00eda38ae235fd4684c3b748884a37a84f229a2cae0a47593f"
+    },
+    {
+      "id": "tool_fbe489a491455564",
+      "name": "token-monitor",
+      "official_url": "http://javis-ai.com/token-monitor",
+      "github_repo_url": "https://github.com/Javis603/token-monitor",
+      "signature": "5814962f38775ea3418b5e4a3091ba0b00579eaa57f67a9f9cd8cbc504c10760"
+    },
+    {
+      "id": "tool_4aecf048e2043752",
+      "name": "open-cowork",
+      "official_url": "",
+      "github_repo_url": "https://github.com/OpenCoworkAI/open-cowork",
+      "signature": "5b28751db573d04bbcb5f4300f539f4bf361105ab272a98acb58a8e5fee206a0"
+    },
+    {
+      "id": "tool_a1d72d324e8bed44",
+      "name": "stealth-browser-mcp",
+      "official_url": "",
+      "github_repo_url": "https://github.com/vibheksoni/stealth-browser-mcp",
+      "signature": "b90385f2d85a5ef7bea4dc97f0ddd6990fd24e16ea98109d8c99e9338ca5dcf4"
+    },
+    {
+      "id": "tool_4d65837a330174b0",
+      "name": "LiveAgent",
+      "official_url": "",
+      "github_repo_url": "https://github.com/Stack-Cairn/LiveAgent",
+      "signature": "1f7fc0097d2f76849539f26c88eeb295d2181ff397045ff953ae29136a6c32ee"
+    },
+    {
+      "id": "tool_e6a1d44516bb79ab",
+      "name": "opc-skills",
+      "official_url": "https://opc.dev",
+      "github_repo_url": "https://github.com/ReScienceLab/opc-skills",
+      "signature": "b7fea059db890ca6cdb5fa1fb9e7108e0433a907386bbb07cca55072422724aa"
+    },
+    {
+      "id": "tool_77cd63df5117cf97",
+      "name": "VoiceMem",
+      "official_url": "",
+      "github_repo_url": "https://github.com/xzf-thu/VoiceMem",
+      "signature": "de76fcafcf45e6899ede522ee5ea239f301cdfd4a061616a28b7e11375a0a106"
+    },
+    {
+      "id": "tool_0dc3e56862d12fef",
+      "name": "Seal-Report",
+      "official_url": "https://sealreport.org",
+      "github_repo_url": "https://github.com/ariacom/Seal-Report",
+      "signature": "517d20676daf30f17341bcc6d6d10181b1e8c4c802872816c2b643621a4293cc"
+    },
+    {
+      "id": "tool_94084733ad02f739",
+      "name": "TokenTracker",
+      "official_url": "https://tokentracker.cc",
+      "github_repo_url": "https://github.com/xiufengsun/TokenTracker",
+      "signature": "c2ccf89652c117a71a90fd1b709703732bf0cf64d7b7d0512e6758b671fd1c16"
+    },
+    {
+      "id": "tool_a82857b86b7407ab",
+      "name": "sprite-gen",
+      "official_url": "",
+      "github_repo_url": "https://github.com/aldegad/sprite-gen",
+      "signature": "c6630ac2f1a1b8178aa0f4b087d5a95c8e603b0e9061e0b1c8585b83a41e5c2d"
+    },
+    {
+      "id": "tool_658cd13b99c68db3",
+      "name": "gortex",
+      "official_url": "https://gortex.dev",
+      "github_repo_url": "https://github.com/zzet/gortex",
+      "signature": "2ea8995798344e14936acf350b176539013dca89464f7fdfde0bbe6de585f971"
+    },
+    {
+      "id": "tool_cec4a984e9dac917",
+      "name": "openilink-hub",
+      "official_url": "https://openilink.com",
+      "github_repo_url": "https://github.com/openilink/openilink-hub",
+      "signature": "debead25723df3f6f2ff7b6d6e2d71e6593a7d3d4321eb4d4c46bfb9fe83d945"
+    },
+    {
+      "id": "tool_a3aa192845560395",
+      "name": "Atomic-Chat",
+      "official_url": "https://atomic.chat",
+      "github_repo_url": "https://github.com/AtomicBot-ai/Atomic-Chat",
+      "signature": "7bcc7d425c2c49ab08e77de289086623539c9bbbc6fcf302a9b7c04ead842a16"
+    }
+  ]
+}

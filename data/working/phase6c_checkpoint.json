@@ -1,0 +1,12 @@
+{
+  "PHASE_6C": {
+    "source_name": "PHASE_6C",
+    "query": null,
+    "page": 1,
+    "stage": "ENRICHMENT",
+    "last_id": null,
+    "processed_count": 1254,
+    "completed": false,
+    "updated_at": "2026-09-17T06:25:00.260583+00:00"
+  }
+}

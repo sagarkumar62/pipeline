@@ -1,0 +1,38 @@
+{
+  "input_count": 1304,
+  "baseline_count": 50,
+  "expansion_count": 1254,
+  "total_output_count": 1304,
+  "website_verification_distribution": {
+    "UNVERIFIED": 430,
+    "ACCESSIBLE_VERIFIED": 644,
+    "IDENTITY_MISMATCH": 111,
+    "NOT_FOUND": 12,
+    "ACCESS_BLOCKED": 31,
+    "UNKNOWN": 15,
+    "TIMEOUT": 8,
+    "SERVER_ERROR": 3
+  },
+  "logo_verification_distribution": {
+    "UNVERIFIED": 511,
+    "VERIFIED": 743
+  },
+  "description_quality_distribution": {
+    "VALID": 1219,
+    "LOW_INFORMATION": 33,
+    "MARKETING_LANGUAGE": 2
+  },
+  "llm_provider_usage": {
+    "NONE": 4
+  },
+  "llm_failures": 0,
+  "grounding_failures": 0,
+  "domain_collision_count": 22,
+  "review_required_count": 35,
+  "unresolved_count": 0,
+  "baseline_sha256": "4520014c9a1676f9090be806087a92ac0e12fef3d3136a95860cff48388ff2a1",
+  "canonical_dataset_changed": "NO",
+  "google_sheet_changed": "NO",
+  "fresh_discovery_executed": "NO",
+  "status": "PHASE6C_ENRICHMENT_COMPLETE_WITH_REVIEW"
+}

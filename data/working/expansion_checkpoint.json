@@ -1,0 +1,112 @@
+{
+  "GitHub API:ai-tools-mid": {
+    "source_name": "GitHub API",
+    "query": "ai-tools-mid",
+    "page": 10,
+    "stage": "DISCOVERY",
+    "last_id": "638940706",
+    "processed_count": 300,
+    "completed": true,
+    "updated_at": "2026-09-17T04:42:32.952696+00:00"
+  },
+  "GitHub API:ai-tools-high": {
+    "source_name": "GitHub API",
+    "query": "ai-tools-high",
+    "page": 4,
+    "stage": "DISCOVERY",
+    "last_id": "1023335896",
+    "processed_count": 416,
+    "completed": true,
+    "updated_at": "2026-09-17T04:45:20.702153+00:00"
+  },
+  "GitHub API:ai-tools-top": {
+    "source_name": "GitHub API",
+    "query": "ai-tools-top",
+    "page": 2,
+    "stage": "DISCOVERY",
+    "last_id": "1187150337",
+    "processed_count": 470,
+    "completed": true,
+    "updated_at": "2026-09-17T04:45:37.808353+00:00"
+  },
+  "GitHub API:ai-dev-tools-mid": {
+    "source_name": "GitHub API",
+    "query": "ai-dev-tools-mid",
+    "page": 1,
+    "stage": "DISCOVERY",
+    "last_id": "1139379321",
+    "processed_count": 483,
+    "completed": true,
+    "updated_at": "2026-09-17T04:45:55.799025+00:00"
+  },
+  "GitHub API:ai-dev-tools-high": {
+    "source_name": "GitHub API",
+    "query": "ai-dev-tools-high",
+    "page": 1,
+    "stage": "DISCOVERY",
+    "last_id": "567985067",
+    "processed_count": 486,
+    "completed": true,
+    "updated_at": "2026-09-17T04:46:01.271411+00:00"
+  },
+  "GitHub API:llm-tools-mid": {
+    "source_name": "GitHub API",
+    "query": "llm-tools-mid",
+    "page": 3,
+    "stage": "DISCOVERY",
+    "last_id": "1368223687",
+    "processed_count": 565,
+    "completed": true,
+    "updated_at": "2026-09-17T04:48:12.056744+00:00"
+  },
+  "GitHub API:llm-tools-high": {
+    "source_name": "GitHub API",
+    "query": "llm-tools-high",
+    "page": 2,
+    "stage": "DISCOVERY",
+    "last_id": "1178974910",
+    "processed_count": 598,
+    "completed": true,
+    "updated_at": "2026-09-17T04:49:21.602334+00:00"
+  },
+  "GitHub API:ai-agent-mid": {
+    "source_name": "GitHub API",
+    "query": "ai-agent-mid",
+    "page": 10,
+    "stage": "DISCOVERY",
+    "last_id": "1217098957",
+    "processed_count": 880,
+    "completed": true,
+    "updated_at": "2026-09-17T04:59:48.892412+00:00"
+  },
+  "GitHub API:ai-agent-high": {
+    "source_name": "GitHub API",
+    "query": "ai-agent-high",
+    "page": 10,
+    "stage": "DISCOVERY",
+    "last_id": "1280019852",
+    "processed_count": 1163,
+    "completed": true,
+    "updated_at": "2026-09-17T05:10:56.319333+00:00"
+  },
+  "GitHub API:ai-agents-mid": {
+    "source_name": "GitHub API",
+    "query": "ai-agents-mid",
+    "page": 10,
+    "stage": "DISCOVERY",
+    "last_id": "964194851",
+    "processed_count": 1426,
+    "completed": true,
+    "updated_at": "2026-09-17T05:19:43.573841+00:00"
+  },
+  "GitHub API:ai-agents-high": {
+    "source_name": "GitHub API",
+    "query": "ai-agents-high",
+    "page": 3,
+    "stage": "DISCOVERY",
+    "last_id": "1301140808",
+    "processed_count": 1500,
+    "completed": false,
+    "updated_at": "2026-09-17T05:22:43.560670+00:00"
+  }
+}

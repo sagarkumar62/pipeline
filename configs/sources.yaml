@@ -1,0 +1,87 @@
+sources:
+  github:
+    name: GitHub API
+    type: api
+    enabled: true
+    base_url: https://api.github.com
+    rate_limit_per_min: 60
+    per_page: 30
+    max_pages: 10
+    queries:
+      # --- Tier 1: Core AI Tools & Developer Tools ---
+      - query: "topic:ai-tools stars:100..500"
+        label: "ai-tools-mid"
+      - query: "topic:ai-tools stars:501..2500"
+        label: "ai-tools-high"
+      - query: "topic:ai-tools stars:>2500"
+        label: "ai-tools-top"
+
+      - query: "topic:ai-developer-tools stars:100..500"
+        label: "ai-dev-tools-mid"
+      - query: "topic:ai-developer-tools stars:>500"
+        label: "ai-dev-tools-high"
+
+      - query: "topic:llm-tools stars:100..500"
+        label: "llm-tools-mid"
+      - query: "topic:llm-tools stars:>500"
+        label: "llm-tools-high"
+
+      # --- Tier 2: AI Agents & MCP Ecosystem ---
+      - query: "topic:ai-agent stars:100..500"
+        label: "ai-agent-mid"
+      - query: "topic:ai-agent stars:>500"
+        label: "ai-agent-high"
+
+      - query: "topic:ai-agents stars:100..500"
+        label: "ai-agents-mid"
+      - query: "topic:ai-agents stars:>500"
+        label: "ai-agents-high"
+
+      - query: "topic:mcp stars:>100"
+        label: "mcp-general"
+      - query: "topic:mcp-server stars:>100"
+        label: "mcp-server"
+
+      # --- Tier 3: RAG, Vector Databases & Infrastructure ---
+      - query: "topic:rag stars:100..500"
+        label: "rag-mid"
+      - query: "topic:rag stars:>500"
+        label: "rag-high"
+
+      - query: "topic:vector-database stars:>100"
+        label: "vector-database"
+      - query: "topic:llm-inference stars:>100"
+        label: "llm-inference"
+
+      # --- Tier 4: Generative AI, Automation & Coding ---
+      - query: "topic:generative-ai stars:100..500"
+        label: "generative-ai-mid"
+      - query: "topic:generative-ai stars:>500"
+        label: "generative-ai-high"
+
+      - query: "topic:ai-automation stars:>100"
+        label: "ai-automation"
+      - query: "topic:ai-productivity stars:>100"
+        label: "ai-productivity"
+
+      - query: "topic:code-assistant stars:>100"
+        label: "code-assistant"
+      - query: "topic:prompt-engineering stars:>100"
+        label: "prompt-engineering"
+
+      - query: "topic:autonomous-agents stars:>100"
+        label: "autonomous-agents"
+      - query: "topic:multi-agent stars:>100"
+        label: "multi-agent"
+
+  huggingface:
+    name: HuggingFace Spaces & Models
+    type: api
+    enabled: true
+    base_url: https://huggingface.co/api
+    rate_limit_per_min: 100
+
+  product_sites:
+    name: Official Product Directory Seed
+    type: direct
+    enabled: true

@@ -1,0 +1,16 @@
+{
+  "record_count": 1304,
+  "baseline_count": 50,
+  "expansion_count": 1254,
+  "final_json_sha256": "bc67ff67db05f0084a42de180de627f333ab60cbad5e86bbe1e2197a6c2b7b73",
+  "final_csv_sha256": "f5d7f0c52cb564e1e0412e46d7cff88e89c2d6455ebd8ce0465df0fa88cf8237",
+  "baseline_sha256": "4520014c9a1676f9090be806087a92ac0e12fef3d3136a95860cff48388ff2a1",
+  "schema_version": "1.0",
+  "publication_timestamp": "2026-09-17T12:35:00Z",
+  "google_sheet_id": "1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo",
+  "worksheet": "Tools",
+  "test_count": 137,
+  "review_count": 35,
+  "unresolved_count": 4,
+  "publication_status": "PHASE6D_PUBLICATION_COMPLETE"
+}
