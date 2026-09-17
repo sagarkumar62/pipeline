@@ -1,0 +1,82 @@
+{
+  "phase": "PHASE_14",
+  "module": "models",
+  "audit_timestamp": "2026-09-17T10:36:00.184461+00:00",
+  "accounting": {
+    "raw": 110,
+    "qualified": 102,
+    "rejected": 8,
+    "review": 0,
+    "duplicates": 0,
+    "final": 102,
+    "equation_1_check": true,
+    "equation_2_check": true
+  },
+  "sources_used": [
+    "OpenRouter API",
+    "HuggingFace Models API",
+    "GitHub Model Search"
+  ],
+  "sources_unaccessible_or_omitted": [
+    "TAAFT Models (No public API endpoint available)",
+    "Models.dev (No public API endpoint available)",
+    "Artificial Analysis (No public API endpoint available)"
+  ],
+  "qualification_summary": {
+    "HARD_EXCLUSION": 8,
+    "REVIEW_REQUIRED": 0,
+    "QUALIFIED": 102
+  },
+  "model_types_breakdown": {
+    "Vision-Language Model": 66,
+    "Large Language Model": 36
+  },
+  "model_families_breakdown": {
+    "Other/Custom": 60,
+    "DeepSeek": 10,
+    "GPT": 12,
+    "Qwen": 6,
+    "Gemini": 8,
+    "Claude": 6
+  },
+  "quantization_breakdown": {
+    "None/Full Precision": 102
+  },
+  "verification_breakdown": {
+    "ACCESSIBLE_UNVERIFIED": 102,
+    "PROVIDER_PAGE_ONLY": 0,
+    "REPOSITORY_PROVENANCE_ONLY": 0
+  },
+  "logo_breakdown": {
+    "verified": 0,
+    "missing": 102,
+    "social_preview_rejected": 102
+  },
+  "protected_data_safety": {
+    "all_hashes_match": true,
+    "protected_hashes": {
+      "data/exports/tools.json": "4520014C9A1676F9090BE806087A92AC0E12FEF3D3136A95860CFF48388FF2A1",
+      "data/exports/tools.csv": "2483F4F19906137B5F3EF871BDDC462374671683DEE1A7A4BF9CD67C357600B7",
+      "data/validated/tools.jsonl": "991065F2BF403DA51B71167F24757012E3F85CBB304EC41ABF041485955161E5",
+      "data/working/baseline_manifest.json": "40B5DAAC7E4AB5CF5A1DC404D3820798D6F227A2C8883993E448919722AE25C0",
+      "data/working/repositories/repositories_raw.jsonl": "AFD9614A3B66DFCCEC9159900682496218DEB221EAAED1DBE3220BCFBB43D959",
+      "data/working/repositories/repositories_qualified.jsonl": "3AE7D16D785D38C2A8A334AA667D840BD4597618AF4925FF5EBB5A78957F5F8C",
+      "data/working/repositories/repositories_rejected.jsonl": "B9705D1AD09A0EF71134B23A321CDD5E36C4A159FFE3418B7A6FC6F06F765237",
+      "data/working/repositories/repositories_review.jsonl": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "data/working/repositories/repositories_final.json": "176D5DEEEC8063FC4684C058B5E758649E57375ACE6AB5ADA05A4ECE43FB8465",
+      "data/working/repositories/repositories_manifest.json": "C29017592B212AD0FDE14FC64F51DD336B751DC6A2A5A6E2896DF8C6C3728715",
+      "data/working/mcp/mcp_raw.jsonl": "56B50C901FEFF43DFAB67E58EF5A6C1110D6C90119D908C9EB27041EBDA20E4F",
+      "data/working/mcp/mcp_qualified.jsonl": "2A1B37D42F1B9AB065AD02D914AE062C2AC643DAAB79BA119CCE6DA98E551F59",
+      "data/working/mcp/mcp_rejected.jsonl": "3568A30B66FA745134A13490C4408AF8A161F0D4A15135A3F556A8B412DF1147",
+      "data/working/mcp/mcp_review.jsonl": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "data/working/mcp/mcp_final.json": "CED0BF7AE869ACC54403C0453A1A12CF097131D6D5CB438BEA36216822A9216B",
+      "data/working/mcp/mcp_manifest.json": "1F751E6511BB4990426F06C5A8BF02539ABA1E4C5FE7D2C125375FF638B6DCFE",
+      "data/working/agents/agents_raw.jsonl": "32C35F448D4EFD6D96EE21A863FB2B962D44CE0039AD614896A5C975BAF0B150",
+      "data/working/agents/agents_qualified.jsonl": "DF279B50D18D93DFDA48060A97BE7FA1F077661BDDD25D9D747258003F0DC4FC",
+      "data/working/agents/agents_rejected.jsonl": "41F0D7EEFD0381B7FC008261E4918AEF4C43877B551BEFDFD8D043BCE30ACDE7",
+      "data/working/agents/agents_review.jsonl": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "data/working/agents/agents_final.json": "B27609EA151951A97445CA5CFDF54C58F22B223D87808B466BA505BC6E00DA14",
+      "data/working/agents/agents_manifest.json": "699E3EC6238D9BEB79ECCF9B463C2ADE907D72AD6C9D6D2F720896FC6B8F8344"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "phase": "PHASE_27",
+  "audit_timestamp": "2026-09-17T13:31:01.494255+00:00",
+  "status": "PHASE27_SUBMISSION_READY_WITH_LIMITATIONS",
+  "google_spreadsheet": {
+    "id": "1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo",
+    "url": "https://docs.google.com/spreadsheets/d/1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo/edit",
+    "worksheets_count": 10,
+    "worksheets": [
+      "Tools",
+      "Companies",
+      "Agents",
+      "MCP",
+      "Models",
+      "Robots",
+      "Devices",
+      "Repositories",
+      "Videos",
+      "News"
+    ]
+  },
+  "inventory": {
+    "total_unified_records": 8318,
+    "total_published_records": 8318,
+    "module_counts": {
+      "Tools": 3500,
+      "Companies": 509,
+      "Agents": 911,
+      "MCP": 475,
+      "Models": 1424,
+      "Robots": 656,
+      "Devices": 337,
+      "Repositories": 88,
+      "Videos": 0,
+      "News": 418
+    }
+  },
+  "consistency": {
+    "mismatches_count": 0,
+    "readback_verification_passed": true
+  },
+  "security": {
+    "exposed_credentials_count": 0,
+    "gitignore_verified": true
+  },
+  "protected_data_safety": {
+    "protected_artifacts_count": 110,
+    "changed_protected_files_count": 0
+  }
+}

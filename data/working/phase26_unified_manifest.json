@@ -1,0 +1,81 @@
+{
+  "phase": "PHASE_26",
+  "timestamp": "2026-09-17T12:50:23.737100+00:00",
+  "google_sheet_id": "1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo",
+  "google_sheet_url": "https://docs.google.com/spreadsheets/d/1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo/edit",
+  "total_unified_records": 8318,
+  "module_summary": {
+    "Tools": {
+      "authoritative_count": 3500,
+      "export_rows": 3500,
+      "published_rows": 3500,
+      "readback_success": true
+    },
+    "Companies": {
+      "authoritative_count": 509,
+      "export_rows": 509,
+      "published_rows": 509,
+      "readback_success": true
+    },
+    "Agents": {
+      "authoritative_count": 911,
+      "export_rows": 911,
+      "published_rows": 911,
+      "readback_success": true
+    },
+    "MCP": {
+      "authoritative_count": 475,
+      "export_rows": 475,
+      "published_rows": 475,
+      "readback_success": true
+    },
+    "Models": {
+      "authoritative_count": 1424,
+      "export_rows": 1424,
+      "published_rows": 1424,
+      "readback_success": true
+    },
+    "Robots": {
+      "authoritative_count": 656,
+      "export_rows": 656,
+      "published_rows": 656,
+      "readback_success": true
+    },
+    "Devices": {
+      "authoritative_count": 337,
+      "export_rows": 337,
+      "published_rows": 337,
+      "readback_success": true
+    },
+    "Repositories": {
+      "authoritative_count": 88,
+      "export_rows": 88,
+      "published_rows": 88,
+      "readback_success": true
+    },
+    "Videos": {
+      "authoritative_count": 0,
+      "export_rows": 0,
+      "published_rows": 0,
+      "readback_success": true
+    },
+    "News": {
+      "authoritative_count": 418,
+      "export_rows": 418,
+      "published_rows": 418,
+      "readback_success": true
+    }
+  },
+  "protected_artifact_sha256": {
+    "data/working/tools_expansion/tools_merged_proposed.json": "F17BCE6FC34CC508414E23E692018B25E0468F9492EFE5C25B8E9917998946AD",
+    "data/working/companies_expansion/companies_merged_proposed.json": "3034ACD8AD7EAD0E4D10D9C76C79A340CCFE8B48C06FDBE7E3365CF3BA4C20FC",
+    "data/working/agents_expansion/agents_merged_proposed.json": "5BD449CF48D76798589880AD848B031FAB5FF8CBF85303AFC296C9C6E732D45A",
+    "data/working/mcp_expansion/mcp_merged_proposed.json": "14878CD1B5F9C29CB8BFA038AA0DB2EDBA7F49D913989D5016673791CB2A24D5",
+    "data/working/models_expansion/models_merged_proposed.json": "8DD11C068DBF86D874F787918CA904DEB825D335EB3900170783D0D7C904CD38",
+    "data/working/robots_expansion/robots_merged_proposed.json": "65366FB4C2BCC81BFFB09B57AD4EF7B0455412D4861C732585067054D843CBCE",
+    "data/working/devices_expansion/devices_merged_proposed.json": "08E07D4E86A2A112FD4F3F5CFB3C59CFF7BCCCB478F2BF8882AB2CEB417B8BAE",
+    "data/working/repositories/repositories_final.json": "176D5DEEEC8063FC4684C058B5E758649E57375ACE6AB5ADA05A4ECE43FB8465",
+    "data/working/news/final_news.json": "DAB0B40B79DBD61F7953EA889665CFB1D4C6DD10CCC81805722D29CC973AA413"
+  },
+  "protected_artifacts_changed_count": 0
+}

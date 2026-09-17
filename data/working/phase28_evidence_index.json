@@ -1,0 +1,80 @@
+{
+  "evaluator_question_mapping": [
+    {
+      "question": "How is LLM fallback implemented?",
+      "evidence_paths": [
+        "src/enrichment/llm_orchestrator.py",
+        "tests/test_phase4_llm_orchestration.py"
+      ],
+      "description": "Multi-provider fallback chain (Gemini Flash -> Groq Llama -> DeepSeek) with 413 payload handling and 429 jitter backoff."
+    },
+    {
+      "question": "How is grounding implemented?",
+      "evidence_paths": [
+        "src/enrichment/grounding_validator.py",
+        "tests/test_phase4b_quality_and_enrichment.py"
+      ],
+      "description": "GroundingValidator evaluates synthesized text against raw source README claims to reject hallucinated features."
+    },
+    {
+      "question": "How is website verification implemented?",
+      "evidence_paths": [
+        "src/verification/website_verifier.py",
+        "tests/test_validation.py"
+      ],
+      "description": "HTTP HEAD/GET probes evaluating official domain accessibility, security headers, and identity match without anti-bot circumvention."
+    },
+    {
+      "question": "How is logo verification implemented?",
+      "evidence_paths": [
+        "src/verification/logo_verifier.py",
+        "tests/test_validation.py"
+      ],
+      "description": "Favicon/brand logo extractor checking image headers and official domain origin; fallbacks set logo_verified=False."
+    },
+    {
+      "question": "How is GitHub discovery implemented?",
+      "evidence_paths": [
+        "src/discovery/tool_discovery.py",
+        "src/discovery/repository_discovery.py",
+        "src/discovery/agent_discovery.py"
+      ],
+      "description": "GitHub API Search with topic queries, star threshold filters, pagination, rate-limit header monitoring, and raw payload caching."
+    },
+    {
+      "question": "Where are tests?",
+      "evidence_paths": [
+        "tests/"
+      ],
+      "description": "387 unit regression tests covering schemas, qualifiers, resolvers, exporters, multi-module expansion, and Phase 27 audit verification."
+    },
+    {
+      "question": "Where is entity resolution?",
+      "evidence_paths": [
+        "src/deduplication/tool_resolver.py",
+        "src/deduplication/company_resolver.py",
+        "src/deduplication/agent_resolver.py",
+        "src/deduplication/mcp_resolver.py",
+        "src/deduplication/model_resolver.py",
+        "src/deduplication/robot_resolver.py",
+        "src/deduplication/device_resolver.py",
+        "src/deduplication/repository_resolver.py",
+        "src/deduplication/news_resolver.py"
+      ],
+      "description": "4-stage resolution pipeline: (1) Normalization, (2) Candidate Blocking, (3) Identity Evidence / Similarity Comparison (domain+name, RapidFuzz), and (4) Deterministic Resolution Decision."
+    },
+    {
+      "question": "Where is final audit?",
+      "evidence_paths": [
+        "data/working/phase27_requirement_matrix.json",
+        "data/working/phase27_evidence_index.json",
+        "data/working/phase27_limitations.json",
+        "data/working/phase27_submission_consistency.json",
+        "data/working/phase27_submission_claims.md",
+        "data/working/phase27_forensic_audit.json",
+        "docs/phase27-final-submission-audit.md"
+      ],
+      "description": "Phase 27 independent forensic audit artifacts and claim boundaries."
+    }
+  ]
+}

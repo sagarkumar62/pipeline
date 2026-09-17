@@ -1,0 +1,112 @@
+{
+  "phase": "PHASE_11A",
+  "audit_type": "REPOSITORY_DATA_RECONCILIATION_AND_FORENSIC_AUDIT",
+  "timestamp": "2026-09-17T15:46:00Z",
+  "reconciliation_status": "PASS_WITH_LIMITATIONS",
+  "authoritative_dataset_established": true,
+  "authoritative_run": "Run 2 (GitHub API Ingestion - 100 Raw Candidates)",
+  "artifact_inventory": {
+    "repositories_raw.jsonl": {
+      "record_count": 100,
+      "size_bytes": 595141,
+      "sha256": "afd9614a3b66dfccec9159900682496218deb221eaaed1dbe3220bcfbb43d959",
+      "mtime": "2026-09-17T15:41:47.859966"
+    },
+    "repositories_qualified.jsonl": {
+      "record_count": 88,
+      "size_bytes": 226717,
+      "sha256": "3ae7d16d785d38c2a8a334aa667d840bd4597618af4925ff5ebb5a78957f5f8c",
+      "mtime": "2026-09-17T15:41:47.941305"
+    },
+    "repositories_rejected.jsonl": {
+      "record_count": 12,
+      "size_bytes": 34185,
+      "sha256": "b9705d1ad09a0ef71134b23a321cdd5e36c4a159ffe3418b7a6fc6f06f765237",
+      "mtime": "2026-09-17T15:41:47.945309"
+    },
+    "repositories_review.jsonl": {
+      "record_count": 0,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime": "2026-09-17T15:41:47.947306"
+    },
+    "repositories_final.json": {
+      "record_count": 88,
+      "size_bytes": 293015,
+      "sha256": "176d5deeec8063fc4684c058b5e758649e57375ace6ab5ada05a4ece43fb8465",
+      "mtime": "2026-09-17T15:44:08.677049"
+    },
+    "repositories_manifest.json": {
+      "record_count": 1,
+      "size_bytes": 698,
+      "sha256": "c29017592b212ad0fde14fc64f51dd336b751dc6a2a5a6e2896df8c6c3728715",
+      "mtime": "2026-09-17T15:44:08.680334"
+    }
+  },
+  "accounting_equations_verification": {
+    "equation_1": "raw (100) == qualified (88) + rejected (12) + review (0)",
+    "equation_1_holds": true,
+    "equation_2": "qualified (88) == unique_final (88) + duplicates (0)",
+    "equation_2_holds": true
+  },
+  "historical_execution_analysis": {
+    "run_1": "60 raw -> 55 qualified -> 55 final (Intermediate API rate limit run)",
+    "claimed_report": "120 raw -> 107 qualified -> 107 final (Earlier draft run prior to final background run)",
+    "run_2_authoritative_disk_state": "100 raw -> 88 qualified -> 88 final (Actual final disk state generated at 15:44:08)",
+    "cause_of_discrepancy": "Phase 11 draft markdown report recorded metrics from an intermediate background run (120 candidates), while the final execution task-205 finalized disk storage with 100 raw candidates -> 88 final records."
+  },
+  "forensic_audit_results": {
+    "duplicate_analysis": {
+      "duplicate_entity_ids": 0,
+      "duplicate_repository_urls": 0,
+      "duplicate_owner_repo_identities": 0,
+      "forks_count": 0,
+      "archived_count": 0
+    },
+    "provenance_coverage": {
+      "discovery_source_pct": 100.0,
+      "discovery_url_pct": 100.0,
+      "repository_url_pct": 100.0,
+      "owner_pct": 100.0,
+      "name_pct": 100.0,
+      "evidence_sources_pct": 100.0
+    },
+    "website_verification": {
+      "verified_official": 56,
+      "accessible_unverified": 14,
+      "repository_provenance_only": 15,
+      "timeout_unverified": 3,
+      "github_url_as_external_website": 0
+    },
+    "logo_verification": {
+      "verified_official_logos": 0,
+      "fallback_unverified_logos": 0,
+      "missing_logos": 88,
+      "social_preview_as_verified": 0
+    },
+    "description_quality": {
+      "missing_descriptions": 0,
+      "empty_descriptions": 0,
+      "short_descriptions_under_20_chars": 0,
+      "source_derived_descriptions": 88,
+      "llm_generated_descriptions": 0
+    },
+    "qualification_forensics": {
+      "false_positives_in_final": 0,
+      "precedence_rule_adherence": "HARD_EXCLUSION > REVIEW_REQUIRED > QUALIFIED enforced 100%"
+    },
+    "protected_tools_integrity": {
+      "tools_json_hash": "4520014C9A1676F9090BE806087A92AC0E12FEF3D3136A95860CFF48388FF2A1",
+      "tools_csv_hash": "2483F4F19906137B5F3EF871BDDC462374671683DEE1A7A4BF9CD67C357600B7",
+      "tools_jsonl_hash": "991065F2BF403DA51B71167F24757012E3F85CBB304EC41ABF041485955161E5",
+      "baseline_manifest_hash": "40B5DAAC7E4AB5CF5A1DC404D3820798D6F227A2C8883993E448919722AE25C0",
+      "status": "100% MATCH — UNCHANGED AND PROTECTED"
+    },
+    "test_suite": {
+      "collected": 161,
+      "passed": 161,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}

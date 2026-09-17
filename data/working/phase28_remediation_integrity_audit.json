@@ -1,0 +1,101 @@
+{
+  "remediation_timestamp": "2026-09-17T20:54:30Z",
+  "status": "PHASE28_REMEDIATION_PASS",
+  "blockers_summary": {
+    "blocker_1_tool_identity": "RESOLVED (Explained key-name mismatch in naive getter and cross-schema concatenation)",
+    "blocker_2_git_submission_state": "RESOLVED (Accurately characterized HEAD==origin/main vs uncommitted working tree)"
+  },
+  "tool_identity_audit": {
+    "authoritative_file": "data/working/tools_expansion/tools_merged_proposed.json",
+    "total_physical_records": 3500,
+    "baseline_portion_count": 1304,
+    "expansion_portion_count": 2196,
+    "key_usage": {
+      "records_with_lowercase_id": 2196,
+      "records_with_titlecase_Record_ID": 1304,
+      "records_with_snakecase_record_id": 0,
+      "records_with_neither": 0
+    },
+    "unified_identity": {
+      "total_non_none_unified_ids": 3500,
+      "unique_unified_ids": 3465,
+      "duplicate_unified_ids": 35
+    },
+    "github_repository_urls": {
+      "total_extracted_urls": 3500,
+      "unique_urls": 2198,
+      "duplicate_urls": 1302
+    },
+    "canonical_names": {
+      "total_extracted_names": 3500,
+      "unique_names": 2198,
+      "duplicate_names": 1302
+    },
+    "exact_duplicate_objects": 0
+  },
+  "tool_duplicate_analysis": {
+    "cause_of_2196_unique_ids_claim": "Naive r.get('id') lookup returned 2,196 valid strings from expansion records and 1,304 None values from prepublication baseline records (mistakenly reported as 1,304 duplicate None IDs).",
+    "cause_of_1302_url_duplicates": "List concatenation of 1,304 prepublication-format baseline dicts and 2,196 ToolRecord-format expansion dicts without cross-schema deduplication.",
+    "genuine_duplicate_objects_count": 0
+  },
+  "baseline_expansion_overlap": {
+    "baseline_unique_urls": 1304,
+    "expansion_unique_urls": 2196,
+    "baseline_vs_expansion_url_overlap_count": 1302,
+    "new_expansion_unique_urls_count": 894,
+    "total_distinct_entities_represented": 2198
+  },
+  "schema_identity_analysis": {
+    "baseline_schema_format": "Prepublication CSV-Export Dict (Keys: Name, Description, Official Website, Official Logo, GitHub Repository, Categories, Source, Source URL, Record ID, Website Verified, Logo Verified, Description Grounded)",
+    "expansion_schema_format": "ToolRecord Pydantic Dict (Keys: id, entity_type, name, canonical_name, url, description, categories, source, discovery_source, logo_url, website_verified, logo_verified, github_repo_url, ...)"
+  },
+  "git_state_audit": {
+    "current_branch": "main",
+    "head_commit": "f285b061b7fe04ffa37873e27739ef2a0b85b1db",
+    "origin_main_commit": "f285b061b7fe04ffa37873e27739ef2a0b85b1db",
+    "head_equals_origin_main": true,
+    "working_tree_clean": false,
+    "modified_tracked_files_count": 4,
+    "modified_tracked_files": [
+      "README.md",
+      "src/discovery/tool_discovery.py",
+      "src/extraction/tool_extractor.py",
+      "src/models/tool.py"
+    ],
+    "credentials_and_env_excluded": true,
+    "generated_datasets_tracked": false
+  },
+  "modified_source_file_analysis": [
+    {
+      "file": "README.md",
+      "purpose": "Evaluator-facing documentation update for Phase 28 multi-module AI Orbit pipeline.",
+      "type": "DOCUMENTATION_ONLY",
+      "affects_reproducibility": false
+    },
+    {
+      "file": "src/discovery/tool_discovery.py",
+      "purpose": "Added optional fetch_readmes=False parameter to avoid unnecessary README downloads during search probes.",
+      "type": "EXECUTABLE_BEHAVIOR_NON_MUTATING",
+      "affects_reproducibility": false
+    },
+    {
+      "file": "src/extraction/tool_extractor.py",
+      "purpose": "Added default source_name='GitHub API' parameter to ToolExtractor.extract() signature.",
+      "type": "EXECUTABLE_BEHAVIOR_NON_MUTATING",
+      "affects_reproducibility": false
+    },
+    {
+      "file": "src/models/tool.py",
+      "purpose": "Standardized Pydantic model inheritance to BaseEntity across multi-module schemas.",
+      "type": "SCHEMA_INFRASTRUCTURE",
+      "affects_reproducibility": false
+    }
+  ],
+  "reproducibility_claim_audit": {
+    "conservative_claims_verified": true,
+    "false_claims_present": false,
+    "wording_sample": "3,500 Tool records accepted by the expansion pipeline and included in the unified dataset."
+  },
+  "unresolved_blockers": [],
+  "final_status": "PHASE28_REMEDIATION_PASS"
+}

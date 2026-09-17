@@ -1,0 +1,45 @@
+{
+  "google_spreadsheet_publication": {
+    "claim": "All 10 module worksheets published and read back via API from public Google Spreadsheet ID 1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo",
+    "evidence": [
+      "run_phase26_unified.py",
+      "data/working/phase26_unified_audit.json",
+      "tests/test_phase26_unified.py"
+    ],
+    "status": "PASS"
+  },
+  "tools_expansion_3500": {
+    "claim": "3,500 Tool records accepted by the expansion pipeline and included in the unified dataset (50 golden baseline + 3,450 expansion records)",
+    "evidence": [
+      "data/working/tools_expansion/tools_merged_proposed.json",
+      "data/working/phase18_tools_expansion_audit.json"
+    ],
+    "status": "PASS"
+  },
+  "news_ingestion_418": {
+    "claim": "Ingested 418 qualified news articles across 19 active RSS feeds with 415 event clusters assigned",
+    "evidence": [
+      "data/working/news/final_news.json",
+      "data/working/news/event_clusters.jsonl",
+      "data/working/phase25_news_audit.json"
+    ],
+    "status": "PASS"
+  },
+  "protected_artifact_safety": {
+    "claim": "100% of protected baseline and expansion artifacts remain byte-for-byte identical",
+    "evidence": [
+      "run_phase26_unified.py",
+      "data/working/phase26_unified_manifest.json"
+    ],
+    "status": "PASS"
+  },
+  "security_credential_safety": {
+    "claim": "No API keys, passwords, or service-account credentials committed or exposed in export artifacts",
+    "evidence": [
+      ".gitignore",
+      ".env.example",
+      "tests/test_phase26_unified.py"
+    ],
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "phase": "PHASE_26",
+  "audit_timestamp": "2026-09-17T12:50:23.740067+00:00",
+  "google_sheet_id": "1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo",
+  "google_sheet_url": "https://docs.google.com/spreadsheets/d/1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo/edit",
+  "total_unified_records": 8318,
+  "module_table": [
+    {
+      "module": "Tools",
+      "authoritative_records": 3500,
+      "export_rows": 3500,
+      "published_rows": 3500
+    },
+    {
+      "module": "Companies",
+      "authoritative_records": 509,
+      "export_rows": 509,
+      "published_rows": 509
+    },
+    {
+      "module": "Agents",
+      "authoritative_records": 911,
+      "export_rows": 911,
+      "published_rows": 911
+    },
+    {
+      "module": "MCP",
+      "authoritative_records": 475,
+      "export_rows": 475,
+      "published_rows": 475
+    },
+    {
+      "module": "Models",
+      "authoritative_records": 1424,
+      "export_rows": 1424,
+      "published_rows": 1424
+    },
+    {
+      "module": "Robots",
+      "authoritative_records": 656,
+      "export_rows": 656,
+      "published_rows": 656
+    },
+    {
+      "module": "Devices",
+      "authoritative_records": 337,
+      "export_rows": 337,
+      "published_rows": 337
+    },
+    {
+      "module": "Repositories",
+      "authoritative_records": 88,
+      "export_rows": 88,
+      "published_rows": 88
+    },
+    {
+      "module": "Videos",
+      "authoritative_records": 0,
+      "export_rows": 0,
+      "published_rows": 0
+    },
+    {
+      "module": "News",
+      "authoritative_records": 418,
+      "export_rows": 418,
+      "published_rows": 418
+    }
+  ],
+  "cross_module_collisions_count": 0,
+  "readback_verification_passed": true,
+  "protected_artifacts_changed_count": 0,
+  "status": "PHASE26_PASS"
+}

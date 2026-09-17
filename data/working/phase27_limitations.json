@@ -1,0 +1,32 @@
+[
+  {
+    "category": "SOURCE_REALITY",
+    "limitation": "Non-API sources (TAAFT, Creati.ai, Crunchbase, Tracxn, Futurepedia, Robot Observatory, Physical AI Devices) were omitted due to lack of public APIs without anti-bot circumvention.",
+    "impact": "LOW"
+  },
+  {
+    "category": "MODULE_COVERAGE",
+    "limitation": "Videos dataset contains 0 records as no public video API adapter was executed.",
+    "impact": "LOW"
+  },
+  {
+    "category": "LLM_ENRICHMENT",
+    "limitation": "Bulk LLM description generation was explicitly bypassed in favor of source-grounded evidence.",
+    "impact": "NONE (Factually safer)"
+  },
+  {
+    "category": "TOOL_VALIDATION_DEPTH",
+    "limitation": "50 golden baseline Tool records received deeper manual validation/enrichment, while 3,450 expansion Tool records were accepted via automated qualification without bulk LLM enrichment or golden-baseline-level manual review.",
+    "impact": "MEDIUM"
+  },
+  {
+    "category": "TOOL_SCORING",
+    "limitation": "The specified 100-point Tool scoring framework was not applied to the final 3,500-record expansion dataset.",
+    "impact": "LOW"
+  },
+  {
+    "category": "ECOSYSTEM_SCALE",
+    "limitation": "Current dataset total is 8,318 records against long-term targets of 50K Tools and 10K Companies.",
+    "impact": "LOW"
+  }
+]

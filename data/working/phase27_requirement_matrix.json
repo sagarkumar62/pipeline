@@ -1,0 +1,202 @@
+[
+  {
+    "id": "REQ_A",
+    "requirement": "Tools module selection",
+    "evidence_file": "run_phase18_tools_expansion.py",
+    "implementation_location": "src/discovery/tool_discovery.py",
+    "status": "PASS",
+    "limitation": "Tools expansion reached 3,500 total records."
+  },
+  {
+    "id": "REQ_B",
+    "requirement": "1,000+ Tools trial dataset",
+    "evidence_file": "data/working/tools_expansion/tools_merged_proposed.json",
+    "implementation_location": "src/models/tool.py",
+    "status": "PASS",
+    "limitation": "Trial target (1,000) exceeded; 3,500 Tool records accepted by the expansion pipeline and included in the unified dataset (50 golden baseline + 3,450 expansion records)."
+  },
+  {
+    "id": "REQ_C",
+    "requirement": "Provenance completeness",
+    "evidence_file": "data/working/phase26_sheet_exports/tools.csv",
+    "implementation_location": "src/models/base.py",
+    "status": "PASS",
+    "limitation": "100% of records have attributable discovery source metadata and URLs."
+  },
+  {
+    "id": "REQ_D",
+    "requirement": "Website verification semantics",
+    "evidence_file": "src/verification/website_verifier.py",
+    "implementation_location": "src/models/base.py",
+    "status": "PARTIAL",
+    "limitation": "Website verification semantics implemented; only a subset has verified external official websites (420/3500 Tools; GitHub repo provenance preserved separately)."
+  },
+  {
+    "id": "REQ_E",
+    "requirement": "Logo verification semantics",
+    "evidence_file": "src/verification/logo_verifier.py",
+    "implementation_location": "src/models/base.py",
+    "status": "PARTIAL",
+    "limitation": "Logo verification semantics implemented; only a subset has verified official logos (262/3500 Tools; missing/fallback logos explicitly represented)."
+  },
+  {
+    "id": "REQ_F",
+    "requirement": "Deduplication hierarchy",
+    "evidence_file": "src/deduplication/tool_resolver.py",
+    "implementation_location": "src/deduplication/",
+    "status": "PASS",
+    "limitation": "Deterministic deduplication by domain+name pair and canonical URL."
+  },
+  {
+    "id": "REQ_G",
+    "requirement": "Entity resolution engine",
+    "evidence_file": "src/deduplication/",
+    "implementation_location": "src/deduplication/",
+    "status": "PASS",
+    "limitation": "Implemented 4-stage entity resolution pipeline (normalization, candidate blocking, similarity comparison, deterministic decision); SHA-256 stable IDs not claimed as entity resolution."
+  },
+  {
+    "id": "REQ_H",
+    "requirement": "LLM orchestration framework",
+    "evidence_file": "src/enrichment/llm_orchestrator.py",
+    "implementation_location": "src/enrichment/",
+    "status": "PARTIAL",
+    "limitation": "Provider fallback chain (Gemini Flash -> Groq Llama -> DeepSeek) implemented & tested; bulk LLM enrichment intentionally skipped across final dataset in favor of source facts."
+  },
+  {
+    "id": "REQ_I",
+    "requirement": "Grounding validator",
+    "evidence_file": "src/enrichment/grounding_validator.py",
+    "implementation_location": "src/enrichment/",
+    "status": "PARTIAL",
+    "limitation": "Grounding validator implemented & tested on sample batches; bulk execution skipped in favor of direct source facts."
+  },
+  {
+    "id": "REQ_J",
+    "requirement": "HTTP 413 Payload Too Large handling",
+    "evidence_file": "src/enrichment/llm_orchestrator.py",
+    "implementation_location": "src/enrichment/",
+    "status": "PASS",
+    "limitation": "Truncates prompt payload on 413 error response."
+  },
+  {
+    "id": "REQ_K",
+    "requirement": "HTTP 429 Rate Limit backoff",
+    "evidence_file": "src/discovery/",
+    "implementation_location": "src/discovery/",
+    "status": "PASS",
+    "limitation": "Respects 429 status with exponential backoff and jitter."
+  },
+  {
+    "id": "REQ_L",
+    "requirement": "Retry with exponential backoff & jitter",
+    "evidence_file": "src/discovery/tool_discovery.py",
+    "implementation_location": "src/discovery/",
+    "status": "PASS",
+    "limitation": "Implemented bounded retries for transient HTTP errors."
+  },
+  {
+    "id": "REQ_M",
+    "requirement": "Async HTTP concurrency limits",
+    "evidence_file": "src/discovery/tool_discovery.py",
+    "implementation_location": "src/discovery/",
+    "status": "PASS",
+    "limitation": "Semaphore-bounded concurrency enforced."
+  },
+  {
+    "id": "REQ_N",
+    "requirement": "Checkpointing & state resume",
+    "evidence_file": "data/working/expansion_checkpoint.json",
+    "implementation_location": "run_phase18_tools_expansion.py",
+    "status": "PASS",
+    "limitation": "State saved to JSON checkpoints during long runs."
+  },
+  {
+    "id": "REQ_O",
+    "requirement": "Scale-thinking architecture",
+    "evidence_file": "docs/phase10-multi-module-architecture.md",
+    "implementation_location": "src/",
+    "status": "PARTIAL",
+    "limitation": "Architecture supports scaling toward 50K Tools; current unified total is 8,318 records."
+  },
+  {
+    "id": "REQ_P",
+    "requirement": "Anti-bot compliance & no circumvention",
+    "evidence_file": "src/discovery/",
+    "implementation_location": "src/discovery/",
+    "status": "PASS",
+    "limitation": "No proxy rotation, CAPTCHA bypass, or scraper hacks used."
+  },
+  {
+    "id": "REQ_Q",
+    "requirement": "Google Sheet publication",
+    "evidence_file": "src/export/google_sheets.py",
+    "implementation_location": "run_phase26_unified.py",
+    "status": "PASS",
+    "limitation": "Published 8,318 records across 10 worksheets to Sheet ID 1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo."
+  },
+  {
+    "id": "REQ_R",
+    "requirement": "Public GitHub repository",
+    "evidence_file": "README.md",
+    "implementation_location": "https://github.com/sagarkumar62/pipeline",
+    "status": "PASS",
+    "limitation": "Public repo sagarkumar62/pipeline."
+  },
+  {
+    "id": "REQ_S",
+    "requirement": "Reproducibility & deterministic runners",
+    "evidence_file": "run_phase26_unified.py",
+    "implementation_location": "run_phase*.py",
+    "status": "PASS",
+    "limitation": "Deterministic execution scripts provided for all phases."
+  },
+  {
+    "id": "REQ_T",
+    "requirement": "Security & credential protection",
+    "evidence_file": ".gitignore",
+    "implementation_location": ".env",
+    "status": "PASS",
+    "limitation": "0 secrets committed; .env and credentials directory ignored."
+  },
+  {
+    "id": "REQ_U",
+    "requirement": "Unit test coverage",
+    "evidence_file": "tests/",
+    "implementation_location": "tests/",
+    "status": "PASS",
+    "limitation": "386 unit tests covering schemas, qualifiers, resolvers, exporters."
+  },
+  {
+    "id": "REQ_V",
+    "requirement": "Source traceability & Video coverage",
+    "evidence_file": "data/working/phase26_sheet_exports/",
+    "implementation_location": "src/models/base.py",
+    "status": "PARTIAL",
+    "limitation": "Source URL and Discovery Source present on every row; Videos dataset currently contains 0 records as no public video API adapter was executed."
+  },
+  {
+    "id": "REQ_W",
+    "requirement": "Multi-module architecture",
+    "evidence_file": "docs/phase10-multi-module-architecture.md",
+    "implementation_location": "src/models/",
+    "status": "PASS",
+    "limitation": "10 distinct module schemas implemented."
+  },
+  {
+    "id": "REQ_X",
+    "requirement": "News ingestion module",
+    "evidence_file": "data/working/news/final_news.json",
+    "implementation_location": "run_phase25_news.py",
+    "status": "PASS",
+    "limitation": "418 articles ingested from 19 active RSS feeds; 415 event clusters assigned."
+  },
+  {
+    "id": "REQ_Y",
+    "requirement": "Module-specific CSV exports",
+    "evidence_file": "data/working/phase26_sheet_exports/",
+    "implementation_location": "run_phase26_unified.py",
+    "status": "PASS",
+    "limitation": "10 deterministic CSV files generated under data/working/phase26_sheet_exports/."
+  }
+]

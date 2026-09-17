@@ -208,7 +208,7 @@ class GitHubToolDiscovery(BaseDiscoverySource):
     def source_name(self) -> str:
         return "GitHub API"
 
-    def __init__(self, api_token: str = None, config_path: str = "configs/sources.yaml", checkpoint_manager: Any = None):
+    def __init__(self, api_token: str = None, config_path: str = "configs/sources.yaml", checkpoint_manager: Any = None, fetch_readmes: bool = False):
         import os
         self.api_token = api_token or os.getenv("GITHUB_TOKEN")
         self.base_url = "https://api.github.com/search/repositories"
@@ -217,6 +217,7 @@ class GitHubToolDiscovery(BaseDiscoverySource):
         self.pages_fetched: int = 0
         self.query_counts: Dict[str, int] = {}
         self.checkpoint_manager = checkpoint_manager
+        self.fetch_readmes = fetch_readmes
 
     def _load_config(self, path: str) -> dict:
         """Load GitHub source configuration from YAML."""
@@ -401,8 +402,11 @@ class GitHubToolDiscovery(BaseDiscoverySource):
                             # The canonical URL for pipeline processing is official_url if available, else repo
                             canonical_url = official_url or repo_url
 
-                            # Fetch README
-                            readme_data = await self._fetch_readme(owner_login, repo_name, client)
+                            # Fetch README conditionally
+                            if self.fetch_readmes:
+                                readme_data = await self._fetch_readme(owner_login, repo_name, client)
+                            else:
+                                readme_data = {"readme_content": None, "readme_url": None, "readme_available": False}
 
                             yielded_count += 1
                             self.query_counts[query_label] = self.query_counts.get(query_label, 0) + 1

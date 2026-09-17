@@ -1,0 +1,68 @@
+{
+  "module": "companies",
+  "phase": "PHASE_15",
+  "created_at": "2026-09-17T10:47:07.456176+00:00",
+  "raw_candidates_count": 110,
+  "qualified_count": 107,
+  "rejected_count": 3,
+  "review_count": 0,
+  "duplicates_resolved": 0,
+  "final_records_count": 107,
+  "website_verified_count": 0,
+  "source_counts": {
+    "GitHub Organizations API": 110
+  },
+  "qualification_counts": {
+    "QUALIFIED": 107,
+    "HARD_EXCLUSION": 3,
+    "REVIEW_REQUIRED": 0
+  },
+  "verification_counts": {
+    "REPOSITORY_PROVENANCE_ONLY": 107,
+    "ACCESSIBLE_UNVERIFIED": 0
+  },
+  "output_files": {
+    "raw": "data\\working\\companies\\companies_raw.jsonl",
+    "qualified": "data\\working\\companies\\companies_qualified.jsonl",
+    "rejected": "data\\working\\companies\\companies_rejected.jsonl",
+    "review": "data\\working\\companies\\companies_review.jsonl",
+    "final": "data\\working\\companies\\companies_final.json"
+  },
+  "artifact_hashes": {
+    "companies_raw.jsonl": "87A8FCADFDEF1DE452727F70C7CD30179A2F27C500EDBDB20FFB4A2CA591E16C",
+    "companies_qualified.jsonl": "B9F4FA37708FF78754EA9D908976B2B89EC765EFFA2D8EC259B7DBDA22F2F10E",
+    "companies_rejected.jsonl": "16B04B74F7FA3772B08AB78C1D38C3129E21834BF0AD1FC9CB0A20473DFC5136",
+    "companies_review.jsonl": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "companies_final.json": "112E7B10DEF6123CFAD3EF5DA55DD35B58EC774E45B513E6E6970B2DA0B8B8F4"
+  },
+  "protected_artifact_hashes": {
+    "data/exports/tools.json": "4520014C9A1676F9090BE806087A92AC0E12FEF3D3136A95860CFF48388FF2A1",
+    "data/exports/tools.csv": "2483F4F19906137B5F3EF871BDDC462374671683DEE1A7A4BF9CD67C357600B7",
+    "data/validated/tools.jsonl": "991065F2BF403DA51B71167F24757012E3F85CBB304EC41ABF041485955161E5",
+    "data/working/baseline_manifest.json": "40B5DAAC7E4AB5CF5A1DC404D3820798D6F227A2C8883993E448919722AE25C0",
+    "data/working/repositories/repositories_raw.jsonl": "AFD9614A3B66DFCCEC9159900682496218DEB221EAAED1DBE3220BCFBB43D959",
+    "data/working/repositories/repositories_qualified.jsonl": "3AE7D16D785D38C2A8A334AA667D840BD4597618AF4925FF5EBB5A78957F5F8C",
+    "data/working/repositories/repositories_rejected.jsonl": "B9705D1AD09A0EF71134B23A321CDD5E36C4A159FFE3418B7A6FC6F06F765237",
+    "data/working/repositories/repositories_review.jsonl": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "data/working/repositories/repositories_final.json": "176D5DEEEC8063FC4684C058B5E758649E57375ACE6AB5ADA05A4ECE43FB8465",
+    "data/working/repositories/repositories_manifest.json": "C29017592B212AD0FDE14FC64F51DD336B751DC6A2A5A6E2896DF8C6C3728715",
+    "data/working/mcp/mcp_raw.jsonl": "56B50C901FEFF43DFAB67E58EF5A6C1110D6C90119D908C9EB27041EBDA20E4F",
+    "data/working/mcp/mcp_qualified.jsonl": "2A1B37D42F1B9AB065AD02D914AE062C2AC643DAAB79BA119CCE6DA98E551F59",
+    "data/working/mcp/mcp_rejected.jsonl": "3568A30B66FA745134A13490C4408AF8A161F0D4A15135A3F556A8B412DF1147",
+    "data/working/mcp/mcp_review.jsonl": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "data/working/mcp/mcp_final.json": "CED0BF7AE869ACC54403C0453A1A12CF097131D6D5CB438BEA36216822A9216B",
+    "data/working/mcp/mcp_manifest.json": "1F751E6511BB4990426F06C5A8BF02539ABA1E4C5FE7D2C125375FF638B6DCFE",
+    "data/working/agents/agents_raw.jsonl": "32C35F448D4EFD6D96EE21A863FB2B962D44CE0039AD614896A5C975BAF0B150",
+    "data/working/agents/agents_qualified.jsonl": "DF279B50D18D93DFDA48060A97BE7FA1F077661BDDD25D9D747258003F0DC4FC",
+    "data/working/agents/agents_rejected.jsonl": "41F0D7EEFD0381B7FC008261E4918AEF4C43877B551BEFDFD8D043BCE30ACDE7",
+    "data/working/agents/agents_review.jsonl": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "data/working/agents/agents_final.json": "B27609EA151951A97445CA5CFDF54C58F22B223D87808B466BA505BC6E00DA14",
+    "data/working/agents/agents_manifest.json": "699E3EC6238D9BEB79ECCF9B463C2ADE907D72AD6C9D6D2F720896FC6B8F8344",
+    "data/working/models/models_raw.jsonl": "44213CAB372672E8B72D2CD240223202C2C3A294C833345A0055043B5C5072F8",
+    "data/working/models/models_qualified.jsonl": "EE65F6FC056ADCFF9D7B8F447DF1823DA59ED55D4705CCC2F31183A8F57DE919",
+    "data/working/models/models_rejected.jsonl": "5FA4F97FF1C2F612361D6F9A6C272AF9C9D72667190D6C74EAEC210AD5B3F49A",
+    "data/working/models/models_review.jsonl": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "data/working/models/models_final.json": "1D2F8753C02D43E975A3AD5561D1F14EEEB84A0E1846D69E0AAAF59734FC0DE9",
+    "data/working/models/models_manifest.json": "D3EBA8BCACDFC40DFB29AA22FC1396D471394C9544964B9D4F2C32F9C0D91E44"
+  }
+}

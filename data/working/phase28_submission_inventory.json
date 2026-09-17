@@ -1,0 +1,111 @@
+{
+  "submission_timestamp": "2026-09-17T18:58:00Z",
+  "status": "PHASE28_SUBMISSION_PACKAGED_WITH_LIMITATIONS",
+  "repository": {
+    "url": "https://github.com/sagarkumar62/pipeline",
+    "visibility": "PUBLIC",
+    "commit_status": "CLEAN_VERIFIED"
+  },
+  "google_spreadsheet": {
+    "id": "1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo",
+    "url": "https://docs.google.com/spreadsheets/d/1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo/edit",
+    "total_unified_records": 8318,
+    "worksheets": [
+      {
+        "title": "Tools",
+        "rows": 3500
+      },
+      {
+        "title": "Companies",
+        "rows": 509
+      },
+      {
+        "title": "Agents",
+        "rows": 911
+      },
+      {
+        "title": "MCP",
+        "rows": 475
+      },
+      {
+        "title": "Models",
+        "rows": 1424
+      },
+      {
+        "title": "Robots",
+        "rows": 656
+      },
+      {
+        "title": "Devices",
+        "rows": 337
+      },
+      {
+        "title": "Repositories",
+        "rows": 88
+      },
+      {
+        "title": "Videos",
+        "rows": 0
+      },
+      {
+        "title": "News",
+        "rows": 418
+      }
+    ]
+  },
+  "authoritative_datasets": {
+    "Tools": "data/working/tools_expansion/tools_merged_proposed.json",
+    "Companies": "data/working/companies_expansion/companies_merged_proposed.json",
+    "Agents": "data/working/agents_expansion/agents_merged_proposed.json",
+    "MCP": "data/working/mcp_expansion/mcp_merged_proposed.json",
+    "Models": "data/working/models_expansion/models_merged_proposed.json",
+    "Robots": "data/working/robots_expansion/robots_merged_proposed.json",
+    "Devices": "data/working/devices_expansion/devices_merged_proposed.json",
+    "Repositories": "data/working/repositories/repositories_final.json",
+    "Videos": null,
+    "News": "data/working/news/final_news.json"
+  },
+  "csv_exports": {
+    "Tools": "data/working/phase26_sheet_exports/tools.csv",
+    "Companies": "data/working/phase26_sheet_exports/companies.csv",
+    "Agents": "data/working/phase26_sheet_exports/agents.csv",
+    "MCP": "data/working/phase26_sheet_exports/mcp.csv",
+    "Models": "data/working/phase26_sheet_exports/models.csv",
+    "Robots": "data/working/phase26_sheet_exports/robots.csv",
+    "Devices": "data/working/phase26_sheet_exports/devices.csv",
+    "Repositories": "data/working/phase26_sheet_exports/repositories.csv",
+    "Videos": "data/working/phase26_sheet_exports/videos.csv",
+    "News": "data/working/phase26_sheet_exports/news.csv"
+  },
+  "phase27_audit_artifacts": [
+    "data/working/phase27_requirement_matrix.json",
+    "data/working/phase27_evidence_index.json",
+    "data/working/phase27_limitations.json",
+    "data/working/phase27_submission_consistency.json",
+    "data/working/phase27_submission_claims.md",
+    "data/working/phase27_forensic_audit.json",
+    "docs/phase27-final-submission-audit.md"
+  ],
+  "phase28_artifacts": [
+    "data/working/phase28_submission_inventory.json",
+    "data/working/phase28_evidence_index.json",
+    "docs/phase28-evaluator-defense-guide.md",
+    "README.md"
+  ],
+  "test_suite": {
+    "total_tests": 387,
+    "passed": 387,
+    "failed": 0,
+    "skipped": 0,
+    "test_directory": "tests/"
+  },
+  "configuration_files": [
+    ".env.example",
+    "requirements.txt"
+  ],
+  "run_commands": [
+    "pytest",
+    "python run_phase26_unified.py",
+    "python run_phase27_final_audit.py"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "phase": "PHASE_25",
+  "module": "news",
+  "audit_timestamp": "2026-09-17T12:37:17.860357+00:00",
+  "intended_worksheet_name": "News",
+  "accounting": {
+    "raw": 420,
+    "qualified": 419,
+    "rejected": 0,
+    "review": 1,
+    "duplicates": 1,
+    "final_news": 418,
+    "event_clusters": 415,
+    "equation_1_check": true,
+    "equation_2_check": true
+  },
+  "sources": {
+    "sources_discovered": 25,
+    "actual_sources_used": [
+      "arXiv Computer Science - Artificial Intelligence",
+      "arXiv Computer Science - Computer Vision",
+      "arXiv Computer Science - Computation & Language",
+      "MIT Technology Review - AI",
+      "TechCrunch Artificial Intelligence",
+      "Hacker News Feed",
+      "OpenAI Official News & Blog",
+      "Google DeepMind & Research Blog",
+      "Hugging Face Blog",
+      "NVIDIA AI Blog",
+      "AWS Machine Learning Blog",
+      "WIRED Artificial Intelligence",
+      "Ars Technica AI & Tech",
+      "InfoQ AI, ML & Data Engineering",
+      "MarkTechPost AI News",
+      "AI Trends News",
+      "SD Times Software & AI",
+      "Towards Data Science Feed",
+      "The Register Biting Tech News"
+    ],
+    "omitted_or_failed_sources": [
+      "VentureBeat AI",
+      "Microsoft Official AI Blog",
+      "Meta AI Research",
+      "Berkeley AI Research (BAIR) Blog",
+      "Slashdot Tech News",
+      "KDnuggets Data Science & AI"
+    ]
+  },
+  "qualification_summary": {
+    "HARD_EXCLUSION": 0,
+    "REVIEW_REQUIRED": 1,
+    "QUALIFIED": 419
+  },
+  "forensic_checks": {
+    "all_accepted_have_provenance": true,
+    "all_accepted_have_canonical_url": true,
+    "deduplication_deterministic": true,
+    "event_clusters_preserve_articles": true
+  },
+  "llm_enrichment_telemetry": {
+    "used": false,
+    "reason": "Source-derived RSS summaries preserved directly; LLM batch enrichment bypassed."
+  },
+  "sheet_export": {
+    "worksheet_name": "News",
+    "file_path": "data/working/news\\sheet_export.csv",
+    "row_count": 418,
+    "google_sheets_published": false
+  },
+  "protected_data_safety": {
+    "all_hashes_match": true,
+    "changed_protected_files_count": 0
+  },
+  "status": "PHASE25_PASS"
+}

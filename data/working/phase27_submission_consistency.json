@@ -1,0 +1,81 @@
+{
+  "repository_status": "PUBLIC",
+  "repository_url": "https://github.com/sagarkumar62/pipeline",
+  "spreadsheet_id": "1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo",
+  "spreadsheet_url": "https://docs.google.com/spreadsheets/d/1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo/edit",
+  "total_physical_authoritative_records": 8318,
+  "total_published_sheet_records": 8318,
+  "total_mismatches_count": 0,
+  "module_consistency": [
+    {
+      "module": "Tools",
+      "physical_authoritative": 3500,
+      "csv_export_rows": 3500,
+      "sheet_published_rows": 3500,
+      "status": "CONSISTENT"
+    },
+    {
+      "module": "Companies",
+      "physical_authoritative": 509,
+      "csv_export_rows": 509,
+      "sheet_published_rows": 509,
+      "status": "CONSISTENT"
+    },
+    {
+      "module": "Agents",
+      "physical_authoritative": 911,
+      "csv_export_rows": 911,
+      "sheet_published_rows": 911,
+      "status": "CONSISTENT"
+    },
+    {
+      "module": "MCP",
+      "physical_authoritative": 475,
+      "csv_export_rows": 475,
+      "sheet_published_rows": 475,
+      "status": "CONSISTENT"
+    },
+    {
+      "module": "Models",
+      "physical_authoritative": 1424,
+      "csv_export_rows": 1424,
+      "sheet_published_rows": 1424,
+      "status": "CONSISTENT"
+    },
+    {
+      "module": "Robots",
+      "physical_authoritative": 656,
+      "csv_export_rows": 656,
+      "sheet_published_rows": 656,
+      "status": "CONSISTENT"
+    },
+    {
+      "module": "Devices",
+      "physical_authoritative": 337,
+      "csv_export_rows": 337,
+      "sheet_published_rows": 337,
+      "status": "CONSISTENT"
+    },
+    {
+      "module": "Repositories",
+      "physical_authoritative": 88,
+      "csv_export_rows": 88,
+      "sheet_published_rows": 88,
+      "status": "CONSISTENT"
+    },
+    {
+      "module": "Videos",
+      "physical_authoritative": 0,
+      "csv_export_rows": 0,
+      "sheet_published_rows": 0,
+      "status": "CONSISTENT"
+    },
+    {
+      "module": "News",
+      "physical_authoritative": 418,
+      "csv_export_rows": 418,
+      "sheet_published_rows": 418,
+      "status": "CONSISTENT"
+    }
+  ]
+}

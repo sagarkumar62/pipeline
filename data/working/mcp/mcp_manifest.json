@@ -1,0 +1,19 @@
+{
+  "module": "mcp",
+  "phase": "PHASE_12",
+  "created_at": "2026-09-17T10:25:31.296257+00:00",
+  "raw_candidates_count": 110,
+  "qualified_count": 103,
+  "rejected_count": 7,
+  "review_count": 0,
+  "duplicates_resolved": 17,
+  "final_records_count": 86,
+  "website_verified_count": 66,
+  "output_files": {
+    "raw": "data\\working\\mcp\\mcp_raw.jsonl",
+    "qualified": "data\\working\\mcp\\mcp_qualified.jsonl",
+    "rejected": "data\\working\\mcp\\mcp_rejected.jsonl",
+    "review": "data\\working\\mcp\\mcp_review.jsonl",
+    "final": "data\\working\\mcp\\mcp_final.json"
+  }
+}

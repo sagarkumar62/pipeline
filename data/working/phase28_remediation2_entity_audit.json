@@ -1,0 +1,769 @@
+{
+  "audit_timestamp": "2026-09-17T21:44:00Z",
+  "status": "PHASE28_REMEDIATION2_PASS",
+  "total_physical_records": 3500,
+  "baseline_count": 1304,
+  "expansion_count": 2196,
+  "overlap_count": 1302,
+  "overlap_classifications_summary": {
+    "SAME_ENTITY_DUPLICATE": 1302,
+    "DISTINCT_ENTITY_SHARED_REPOSITORY": 0,
+    "UNRESOLVED": 0
+  },
+  "duplicate_unified_ids": {
+    "total_unique_ids": 3465,
+    "duplicated_id_strings_count": 35,
+    "unexplained_duplicate_ids": 0,
+    "duplicate_id_details": [
+      {
+        "id": "tool_7e75f3f9311ae674",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 0,
+            "block": "baseline",
+            "name": "cc-switch",
+            "github_url": "https://github.com/farion1231/cc-switch"
+          },
+          {
+            "index": 1661,
+            "block": "expansion",
+            "name": "cc-switch",
+            "github_url": "https://github.com/farion1231/cc-switch"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_22722e523af215ba",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 1,
+            "block": "baseline",
+            "name": "browser-use",
+            "github_url": "https://github.com/browser-use/browser-use"
+          },
+          {
+            "index": 1662,
+            "block": "expansion",
+            "name": "browser-use",
+            "github_url": "https://github.com/browser-use/browser-use"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_8b2c97aaa1521199",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 3,
+            "block": "baseline",
+            "name": "medusa",
+            "github_url": "https://github.com/medusajs/medusa"
+          },
+          {
+            "index": 1664,
+            "block": "expansion",
+            "name": "medusa",
+            "github_url": "https://github.com/medusajs/medusa"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_c51aea0eca994fff",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 4,
+            "block": "baseline",
+            "name": "prompt-optimizer",
+            "github_url": "https://github.com/linshenkx/prompt-optimizer"
+          },
+          {
+            "index": 1665,
+            "block": "expansion",
+            "name": "prompt-optimizer",
+            "github_url": "https://github.com/linshenkx/prompt-optimizer"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_aef70ac495a46702",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 5,
+            "block": "baseline",
+            "name": "openclaude",
+            "github_url": "https://github.com/Gitlawb/openclaude"
+          },
+          {
+            "index": 1666,
+            "block": "expansion",
+            "name": "openclaude",
+            "github_url": "https://github.com/Gitlawb/openclaude"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_bd430e11fad5b7fa",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 8,
+            "block": "baseline",
+            "name": "Auto-claude-code-research-in-sleep",
+            "github_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep"
+          },
+          {
+            "index": 1669,
+            "block": "expansion",
+            "name": "Auto-claude-code-research-in-sleep",
+            "github_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_8ff2b861cf4f58ee",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 10,
+            "block": "baseline",
+            "name": "nanobrowser",
+            "github_url": "https://github.com/nanobrowser/nanobrowser"
+          },
+          {
+            "index": 1673,
+            "block": "expansion",
+            "name": "nanobrowser",
+            "github_url": "https://github.com/nanobrowser/nanobrowser"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_9c4d972cc4034652",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 11,
+            "block": "baseline",
+            "name": "ccstatusline",
+            "github_url": "https://github.com/sirmalloc/ccstatusline"
+          },
+          {
+            "index": 1674,
+            "block": "expansion",
+            "name": "ccstatusline",
+            "github_url": "https://github.com/sirmalloc/ccstatusline"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_d08a330a85e233ab",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 13,
+            "block": "baseline",
+            "name": "steel-browser",
+            "github_url": "https://github.com/steel-dev/steel-browser"
+          },
+          {
+            "index": 1676,
+            "block": "expansion",
+            "name": "steel-browser",
+            "github_url": "https://github.com/steel-dev/steel-browser"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_d7e17d8a9f4acacc",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 14,
+            "block": "baseline",
+            "name": "modly",
+            "github_url": "https://github.com/lightningpixel/modly"
+          },
+          {
+            "index": 1677,
+            "block": "expansion",
+            "name": "modly",
+            "github_url": "https://github.com/lightningpixel/modly"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_f9a8f19eff136d6e",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 16,
+            "block": "baseline",
+            "name": "FunClip",
+            "github_url": "https://github.com/modelscope/FunClip"
+          },
+          {
+            "index": 1680,
+            "block": "expansion",
+            "name": "FunClip",
+            "github_url": "https://github.com/modelscope/FunClip"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_abe3fb74d529db6b",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 18,
+            "block": "baseline",
+            "name": "poster-design",
+            "github_url": "https://github.com/palxiao/poster-design"
+          },
+          {
+            "index": 1683,
+            "block": "expansion",
+            "name": "poster-design",
+            "github_url": "https://github.com/palxiao/poster-design"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_9d15ee538baca472",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 20,
+            "block": "baseline",
+            "name": "judge0",
+            "github_url": "https://github.com/judge0/judge0"
+          },
+          {
+            "index": 1685,
+            "block": "expansion",
+            "name": "judge0",
+            "github_url": "https://github.com/judge0/judge0"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_f6dba713ec1614e4",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 21,
+            "block": "baseline",
+            "name": "claude-devtools",
+            "github_url": "https://github.com/matt1398/claude-devtools"
+          },
+          {
+            "index": 1686,
+            "block": "expansion",
+            "name": "claude-devtools",
+            "github_url": "https://github.com/matt1398/claude-devtools"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_efcd461b9ec40802",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 23,
+            "block": "baseline",
+            "name": "pinme",
+            "github_url": "https://github.com/glitternetwork/pinme"
+          },
+          {
+            "index": 1688,
+            "block": "expansion",
+            "name": "pinme",
+            "github_url": "https://github.com/glitternetwork/pinme"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_d10ac25ba2ebd643",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 24,
+            "block": "baseline",
+            "name": "anything-analyzer",
+            "github_url": "https://github.com/Mouseww/anything-analyzer"
+          },
+          {
+            "index": 1689,
+            "block": "expansion",
+            "name": "anything-analyzer",
+            "github_url": "https://github.com/Mouseww/anything-analyzer"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_06b2795a2ecbeb54",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 25,
+            "block": "baseline",
+            "name": "llm-wiki-agent",
+            "github_url": "https://github.com/SamurAIGPT/llm-wiki-agent"
+          },
+          {
+            "index": 1690,
+            "block": "expansion",
+            "name": "llm-wiki-agent",
+            "github_url": "https://github.com/SamurAIGPT/llm-wiki-agent"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_76837f17df506d8c",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 26,
+            "block": "baseline",
+            "name": "VulnClaw",
+            "github_url": "https://github.com/Netw0rkNoob/VulnClaw"
+          },
+          {
+            "index": 1691,
+            "block": "expansion",
+            "name": "VulnClaw",
+            "github_url": "https://github.com/Netw0rkNoob/VulnClaw"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_0db13fe3eb3e0eb6",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 27,
+            "block": "baseline",
+            "name": "any-auto-register",
+            "github_url": "https://github.com/lxf746/any-auto-register"
+          },
+          {
+            "index": 1692,
+            "block": "expansion",
+            "name": "any-auto-register",
+            "github_url": "https://github.com/lxf746/any-auto-register"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_c006703a2795d033",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 28,
+            "block": "baseline",
+            "name": "claude-tap",
+            "github_url": "https://github.com/liaohch3/claude-tap"
+          },
+          {
+            "index": 1693,
+            "block": "expansion",
+            "name": "claude-tap",
+            "github_url": "https://github.com/liaohch3/claude-tap"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_b46f91ff30a7904b",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 31,
+            "block": "baseline",
+            "name": "humanize-text",
+            "github_url": "https://github.com/lynote-ai/humanize-text"
+          },
+          {
+            "index": 1696,
+            "block": "expansion",
+            "name": "humanize-text",
+            "github_url": "https://github.com/lynote-ai/humanize-text"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_8e07d3b4f9d247e1",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 32,
+            "block": "baseline",
+            "name": "daily-arXiv-ai-enhanced",
+            "github_url": "https://github.com/dw-dengwei/daily-arXiv-ai-enhanced"
+          },
+          {
+            "index": 1697,
+            "block": "expansion",
+            "name": "daily-arXiv-ai-enhanced",
+            "github_url": "https://github.com/dw-dengwei/daily-arXiv-ai-enhanced"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_439834253697f9a5",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 33,
+            "block": "baseline",
+            "name": "clawpanel",
+            "github_url": "https://github.com/qingchencloud/clawpanel"
+          },
+          {
+            "index": 1698,
+            "block": "expansion",
+            "name": "clawpanel",
+            "github_url": "https://github.com/qingchencloud/clawpanel"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_8a605eaed337460b",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 34,
+            "block": "baseline",
+            "name": "designer-skills",
+            "github_url": "https://github.com/Owl-Listener/designer-skills"
+          },
+          {
+            "index": 1699,
+            "block": "expansion",
+            "name": "designer-skills",
+            "github_url": "https://github.com/Owl-Listener/designer-skills"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_baf31e07d6442efa",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 36,
+            "block": "baseline",
+            "name": "Data-Analysis-Agent",
+            "github_url": "https://github.com/Zafer-Liu/Data-Analysis-Agent"
+          },
+          {
+            "index": 1702,
+            "block": "expansion",
+            "name": "Data-Analysis-Agent",
+            "github_url": "https://github.com/Zafer-Liu/Data-Analysis-Agent"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_b28d0519e53bc790",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 37,
+            "block": "baseline",
+            "name": "lanhu-mcp",
+            "github_url": "https://github.com/dsphper/lanhu-mcp"
+          },
+          {
+            "index": 1566,
+            "block": "expansion",
+            "name": "lanhu-mcp",
+            "github_url": "https://github.com/dsphper/lanhu-mcp"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_4aecf048e2043752",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 39,
+            "block": "baseline",
+            "name": "open-cowork",
+            "github_url": "https://github.com/OpenCoworkAI/open-cowork"
+          },
+          {
+            "index": 1568,
+            "block": "expansion",
+            "name": "open-cowork",
+            "github_url": "https://github.com/OpenCoworkAI/open-cowork"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_a1d72d324e8bed44",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 40,
+            "block": "baseline",
+            "name": "stealth-browser-mcp",
+            "github_url": "https://github.com/vibheksoni/stealth-browser-mcp"
+          },
+          {
+            "index": 1570,
+            "block": "expansion",
+            "name": "stealth-browser-mcp",
+            "github_url": "https://github.com/vibheksoni/stealth-browser-mcp"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_4d65837a330174b0",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 41,
+            "block": "baseline",
+            "name": "LiveAgent",
+            "github_url": "https://github.com/Stack-Cairn/LiveAgent"
+          },
+          {
+            "index": 1569,
+            "block": "expansion",
+            "name": "LiveAgent",
+            "github_url": "https://github.com/Stack-Cairn/LiveAgent"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_e6a1d44516bb79ab",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 42,
+            "block": "baseline",
+            "name": "opc-skills",
+            "github_url": "https://github.com/ReScienceLab/opc-skills"
+          },
+          {
+            "index": 1573,
+            "block": "expansion",
+            "name": "opc-skills",
+            "github_url": "https://github.com/ReScienceLab/opc-skills"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_77cd63df5117cf97",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 43,
+            "block": "baseline",
+            "name": "VoiceMem",
+            "github_url": "https://github.com/xzf-thu/VoiceMem"
+          },
+          {
+            "index": 1574,
+            "block": "expansion",
+            "name": "VoiceMem",
+            "github_url": "https://github.com/xzf-thu/VoiceMem"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_0dc3e56862d12fef",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 44,
+            "block": "baseline",
+            "name": "Seal-Report",
+            "github_url": "https://github.com/ariacom/Seal-Report"
+          },
+          {
+            "index": 1576,
+            "block": "expansion",
+            "name": "Seal-Report",
+            "github_url": "https://github.com/ariacom/Seal-Report"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_a82857b86b7407ab",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 46,
+            "block": "baseline",
+            "name": "sprite-gen",
+            "github_url": "https://github.com/aldegad/sprite-gen"
+          },
+          {
+            "index": 1577,
+            "block": "expansion",
+            "name": "sprite-gen",
+            "github_url": "https://github.com/aldegad/sprite-gen"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_cec4a984e9dac917",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 48,
+            "block": "baseline",
+            "name": "openilink-hub",
+            "github_url": "https://github.com/openilink/openilink-hub"
+          },
+          {
+            "index": 1579,
+            "block": "expansion",
+            "name": "openilink-hub",
+            "github_url": "https://github.com/openilink/openilink-hub"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      },
+      {
+        "id": "tool_a3aa192845560395",
+        "occurrences_count": 2,
+        "occurrences": [
+          {
+            "index": 49,
+            "block": "baseline",
+            "name": "Atomic-Chat",
+            "github_url": "https://github.com/AtomicBot-ai/Atomic-Chat"
+          },
+          {
+            "index": 1580,
+            "block": "expansion",
+            "name": "Atomic-Chat",
+            "github_url": "https://github.com/AtomicBot-ai/Atomic-Chat"
+          }
+        ],
+        "cause": "Baseline pre-computed ID matched expansion SHA-256 ID generated from exact same GitHub repository URL",
+        "same_entity": true
+      }
+    ]
+  },
+  "identity_collision_groups": {
+    "normalized_github_urls": {
+      "total": 3500,
+      "unique": 2198,
+      "duplicates": 1302
+    },
+    "normalized_names": {
+      "total": 3500,
+      "unique": 2198,
+      "duplicates": 1302
+    },
+    "official_domains": {
+      "total": 2375,
+      "unique": 1362,
+      "duplicates": 1013
+    }
+  },
+  "unique_repositories": 2198,
+  "unique_entities_after_resolution": 2198,
+  "unresolved_entities": 0,
+  "baseline_integrity": {
+    "baseline_1304_unchanged": true,
+    "baseline_sha256_verified": true,
+    "silently_removed_records": 0
+  },
+  "entity_resolution_method": [
+    "1. Canonical Normalization (URLs, domains, name lowercasing)",
+    "2. Candidate Blocking (partitioning by normalized GitHub repository URL)",
+    "3. Identity Evidence & Similarity (exact URL match, name comparison, domain match)",
+    "4. Deterministic Resolution (mapping 1,302 expansion records as SAME_ENTITY_DUPLICATE of baseline entities)",
+    "5. Stable ID Fingerprinting (SHA-256 hash tool_<hash>)"
+  ],
+  "git_state": {
+    "branch": "main",
+    "head_commit": "f285b061b7fe04ffa37873e27739ef2a0b85b1db",
+    "origin_main_commit": "f285b061b7fe04ffa37873e27739ef2a0b85b1db",
+    "head_equals_origin_main": true,
+    "working_tree_clean": false,
+    "modified_tracked_files": [
+      "README.md",
+      "src/discovery/tool_discovery.py",
+      "src/extraction/tool_extractor.py",
+      "src/models/tool.py"
+    ],
+    "synchronized_remote_equals_clean": false
+  },
+  "safe_submission_wording": "3,500 physical Tool records accepted by the expansion pipeline, representing 2,198 uniquely resolved entities (1,304 golden baseline entities + 894 new expansion entities) included in the unified dataset.",
+  "unresolved_blockers": [],
+  "final_status": "PHASE28_REMEDIATION2_PASS"
+}

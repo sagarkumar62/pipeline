@@ -1,0 +1,160 @@
+{
+  "phase": "PHASE 10",
+  "audit_type": "MULTI_MODULE_ARCHITECTURE_AND_SCHEMA_AUDIT",
+  "timestamp": "2026-09-17T15:30:00Z",
+  "protected_dataset_integrity": {
+    "tools_record_count": 1304,
+    "tools_json_intact": true,
+    "tools_csv_intact": true,
+    "baseline_50_intact": true,
+    "test_suite_status": "144 tests passed out of 144 executed (0 failures)"
+  },
+  "pipeline_components_classification": {
+    "core_shared_components": [
+      {
+        "component": "BaseDiscoverySource",
+        "file": "src/discovery/base.py",
+        "reusability": "HIGH",
+        "description": "Abstract base class for all discovery sources; handles rate limits, HTTP clients, and raw data logging."
+      },
+      {
+        "component": "DataCleaner",
+        "file": "src/cleaning/cleaner.py",
+        "reusability": "HIGH",
+        "description": "Sanitizes text fields, removes markdown formatting, fixes HTML entities, and trims whitespace across all string payloads."
+      },
+      {
+        "component": "Normalizer",
+        "file": "src/normalization/normalizer.py",
+        "reusability": "HIGH",
+        "description": "Normalizes URLs, extracts canonical root domains, and lowercases string identifiers."
+      },
+      {
+        "component": "WebsiteVerifier",
+        "file": "src/verification/website.py",
+        "reusability": "HIGH",
+        "description": "Performs async HTTP HEAD/GET probes, follows redirects, inspects SSL certs, and parses HTML page titles and meta descriptions."
+      },
+      {
+        "component": "LogoVerifier",
+        "file": "src/verification/logo.py",
+        "reusability": "HIGH",
+        "description": "Discovers and verifies favicon, apple-touch-icon, and og:image assets across web domains."
+      },
+      {
+        "component": "DeduplicationResolver (Core Engine)",
+        "file": "src/deduplication/resolver.py",
+        "reusability": "MEDIUM_HIGH",
+        "description": "Candidate blocking key generation, RapidFuzz string comparison, exact domain lookup, and confidence scoring."
+      },
+      {
+        "component": "LLMOrchestrator",
+        "file": "src/enrichment/orchestrator.py",
+        "reusability": "HIGH",
+        "description": "Multi-provider LLM fallback chain (Gemini Flash -> Groq Llama -> DeepSeek), 429 rate limit handling, backoff retries, and structured JSON output parsing."
+      },
+      {
+        "component": "GroundingValidator",
+        "file": "src/enrichment/validator.py",
+        "reusability": "HIGH",
+        "description": "Verifies that LLM-generated summaries are strictly grounded in scraped source evidence and rejects hallucinated claims."
+      },
+      {
+        "component": "DataRepository",
+        "file": "src/storage/repository.py",
+        "reusability": "HIGH",
+        "description": "FileSystem storage layer managing raw JSONL writes, stage checkpoints, atomic file saves, and baseline record loading."
+      },
+      {
+        "component": "DatasetExporter",
+        "file": "src/export/exporters.py",
+        "reusability": "HIGH",
+        "description": "Generates structured JSON, JSONL, and CSV export bundles from validated record arrays."
+      },
+      {
+        "component": "GoogleSheetsExporter",
+        "file": "src/export/google_sheets.py",
+        "reusability": "HIGH",
+        "description": "gspread API integration for syncing canonical dataset tables into Google Sheets."
+      },
+      {
+        "component": "PipelineAuditor",
+        "file": "src/audit/auditor.py",
+        "reusability": "HIGH",
+        "description": "Audits missing fields, invalid URLs, low quality scores, and verification flags."
+      },
+      {
+        "component": "Hashing Utilities",
+        "file": "src/utils/hashing.py",
+        "reusability": "MEDIUM",
+        "description": "SHA-256 hash generation for entity IDs (needs parameterization for entity_type)."
+      }
+    ],
+    "tools_specific_components": [
+      {
+        "component": "ToolRecord",
+        "file": "src/models/tool.py",
+        "reason": "Hardcoded entity_type='TOOL' and tool-specific fields (pricing_model, github_stars, company_name)."
+      },
+      {
+        "component": "ToolDiscovery",
+        "file": "src/discovery/tool_discovery.py",
+        "reason": "Discovery queries tailored for AI tool GitHub topics (ai-tools, llm-tools) and HF spaces."
+      },
+      {
+        "component": "ToolExtractor",
+        "file": "src/extraction/tool_extractor.py",
+        "reason": "Maps raw discovery payloads specifically into ToolRecord schema instances."
+      },
+      {
+        "component": "DomainQualifier",
+        "file": "src/qualification/qualifier.py",
+        "reason": "Contains qualification rules specifically for AI Tools vs general software repositories."
+      },
+      {
+        "component": "TaxonomyClassifier",
+        "file": "src/classification/classifier.py",
+        "reason": "Uses Tools taxonomy categories (Productivity, Developer Tools, Coding, etc.)."
+      },
+      {
+        "component": "SchemaValidator",
+        "file": "src/validation/validator.py",
+        "reason": "Validates ToolRecord field completeness and compares against 50-record Tools baseline."
+      },
+      {
+        "component": "LLM Tool Prompt Builder",
+        "file": "src/enrichment/orchestrator.py",
+        "reason": "get_tool_enrichment_prompt asks explicitly for tool functionality and tool taxonomy."
+      }
+    ]
+  },
+  "schema_extensibility_audit": {
+    "is_canonical_schema_extensible": true,
+    "recommended_refactoring": "Extract BaseEntity abstract Pydantic class containing all 12 common fields, then subclass for each of the 10 modules.",
+    "common_field_count": 12,
+    "total_modules_audited": 10
+  },
+  "deduplication_and_entity_resolution": {
+    "within_module_deduplication": "SUPPORTED (Blocking on canonical name + domain lookup + fuzzy name similarity)",
+    "cross_module_entity_resolution": "REQUIRES SEPARATION (Cross-module resolution links entities across types e.g. Agent -> Model or Tool -> Company without collapsing them as duplicates)",
+    "hash_generation_generalization": "Refactor generate_tool_id to generate_entity_id(entity_type, primary_domain, canonical_name)"
+  },
+  "llm_architecture_audit": {
+    "reusable": true,
+    "fallback_chain": ["Gemini Flash", "Groq Llama", "DeepSeek"],
+    "grounding_enforced": true,
+    "rate_limit_resilient": true,
+    "module_prompt_isolation_strategy": "Implement BasePromptStrategy with module-specific subclasses (e.g. ModelPromptStrategy, CompanyPromptStrategy)"
+  },
+  "validation_architecture_audit": {
+    "reusable_framework": true,
+    "module_specific_rules_needed": true,
+    "examples": {
+      "Tools": ["website", "logo", "category", "functionality"],
+      "Models": ["model_identity", "provider", "version", "modality", "parameter_count"],
+      "MCP": ["server_package_identity", "repository", "registry", "transport_types"],
+      "News": ["published_at", "publisher_domain", "canonical_url", "event_cluster"],
+      "Repositories": ["repo_full_name", "owner", "stars", "license", "commit_freshness"]
+    }
+  }
+}

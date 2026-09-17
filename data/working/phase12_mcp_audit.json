@@ -1,0 +1,45 @@
+{
+  "phase": "PHASE_12",
+  "module": "MCP",
+  "timestamp": "2026-09-17T15:54:30Z",
+  "audit_status": "PHASE12_PASS_WITH_LIMITATIONS",
+  "protected_data_integrity": {
+    "tools_json_hash": "4520014C9A1676F9090BE806087A92AC0E12FEF3D3136A95860CFF48388FF2A1",
+    "tools_csv_hash": "2483F4F19906137B5F3EF871BDDC462374671683DEE1A7A4BF9CD67C357600B7",
+    "tools_jsonl_hash": "991065F2BF403DA51B71167F24757012E3F85CBB304EC41ABF041485955161E5",
+    "baseline_manifest_hash": "40B5DAAC7E4AB5CF5A1DC404D3820798D6F227A2C8883993E448919722AE25C0",
+    "repository_raw_hash": "AFD9614A3B66DFCCEC9159900682496218DEB221EAAED1DBE3220BCFBB43D959",
+    "repository_qualified_hash": "3AE7D16D785D38C2A8A334AA667D840BD4597618AF4925FF5EBB5A78957F5F8C",
+    "repository_rejected_hash": "B9705D1AD09A0EF71134B23A321CDD5E36C4A159FFE3418B7A6FC6F06F765237",
+    "repository_final_hash": "176D5DEEEC8063FC4684C058B5E758649E57375ACE6AB5ADA05A4ECE43FB8465",
+    "integrity_status": "100% MATCH — ALL TOOLS AND REPOSITORY ARTIFACTS UNCHANGED"
+  },
+  "ingestion_accounting": {
+    "raw_candidates_count": 110,
+    "qualified_count": 103,
+    "rejected_count": 7,
+    "review_count": 0,
+    "duplicates_resolved": 17,
+    "final_records_count": 86,
+    "equation_1_holds": true,
+    "equation_2_holds": true
+  },
+  "forensic_audit_checks": {
+    "no_duplicate_entity_ids": true,
+    "no_duplicate_repository_urls": true,
+    "no_duplicate_package_names": true,
+    "no_missing_provenance": true,
+    "no_hallucinated_descriptions": true,
+    "github_url_not_marked_as_external_website": true,
+    "social_preview_not_verified_logo": true,
+    "hard_exclusions_enforced": true,
+    "tools_dataset_unaltered": true,
+    "repository_dataset_unaltered": true
+  },
+  "test_suite_summary": {
+    "collected": 183,
+    "passed": 183,
+    "failed": 0,
+    "skipped": 0
+  }
+}

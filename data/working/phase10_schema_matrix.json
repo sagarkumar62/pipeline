@@ -1,0 +1,558 @@
+{
+  "phase": "PHASE 10",
+  "audit_type": "SCHEMA_MATRIX_AUDIT",
+  "common_entity_schema": {
+    "description": "Base entity schema shared across all 10 AI Orbit modules",
+    "fields": [
+      {
+        "field_name": "id",
+        "type": "str",
+        "classification": "COMMON",
+        "description": "Deterministic stable entity ID generated from entity_type + canonical_domain + canonical_name hash."
+      },
+      {
+        "field_name": "entity_type",
+        "type": "str",
+        "classification": "COMMON",
+        "description": "Discriminator enum: TOOL, COMPANY, AGENT, MCP, MODEL, ROBOT, DEVICE, NEWS, REPOSITORY, VIDEO."
+      },
+      {
+        "field_name": "name",
+        "type": "str",
+        "classification": "COMMON",
+        "description": "Primary canonical display name of the entity."
+      },
+      {
+        "field_name": "description",
+        "type": "Optional[str]",
+        "classification": "COMMON",
+        "description": "Factual 1-2 sentence description grounded in source evidence."
+      },
+      {
+        "field_name": "url",
+        "type": "str",
+        "classification": "COMMON",
+        "description": "Verified canonical primary website or repository URL."
+      },
+      {
+        "field_name": "categories",
+        "type": "List[str]",
+        "classification": "COMMON",
+        "description": "Taxonomy categories assigned to the entity."
+      },
+      {
+        "field_name": "source",
+        "type": "DiscoverySource",
+        "classification": "SOURCE_METADATA",
+        "description": "Primary discovery metadata (source name, URL, trust level, timestamp)."
+      },
+      {
+        "field_name": "provenance",
+        "type": "List[EvidenceSource]",
+        "classification": "SOURCE_METADATA",
+        "description": "Audit trail of evidence URLs supporting the factual claims of this entity."
+      },
+      {
+        "field_name": "verification",
+        "type": "VerificationResult",
+        "classification": "VERIFICATION_METADATA",
+        "description": "HTTP accessibility, identity match, domain match, page title, and meta description."
+      },
+      {
+        "field_name": "logo",
+        "type": "Optional[LogoMetadata]",
+        "classification": "VERIFICATION_METADATA",
+        "description": "Verified official logo URL, discovery source, and verification status."
+      },
+      {
+        "field_name": "timestamps",
+        "type": "EntityTimestamps",
+        "classification": "COMMON",
+        "description": "Record creation, update, and last verification timestamps."
+      },
+      {
+        "field_name": "quality",
+        "type": "QualityMetrics",
+        "classification": "COMMON",
+        "description": "Metadata completeness, verification score, description quality, composite quality score."
+      }
+    ]
+  },
+  "modules": {
+    "Tools": {
+      "entity_type": "TOOL",
+      "status": "IMPLEMENTED_PROTECTED",
+      "record_count": 1304,
+      "module_specific_fields": [
+        {
+          "field_name": "official_url",
+          "type": "Optional[str]",
+          "classification": "OPTIONAL",
+          "description": "Verified official canonical domain URL distinct from repository URL."
+        },
+        {
+          "field_name": "pricing_model",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Pricing structure (Free, Freemium, Paid, Open Source, Enterprise)."
+        },
+        {
+          "field_name": "company_name",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Name of developing company or organizational entity."
+        },
+        {
+          "field_name": "company_url",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Website URL of the developing company."
+        },
+        {
+          "field_name": "github_stars",
+          "type": "Optional[int]",
+          "classification": "SOURCE_METADATA",
+          "description": "Stargazer count if discovered via or linked to GitHub."
+        },
+        {
+          "field_name": "github_repo_url",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "GitHub repository URL associated with the tool."
+        }
+      ]
+    },
+    "Companies": {
+      "entity_type": "COMPANY",
+      "status": "PLANNED",
+      "module_specific_fields": [
+        {
+          "field_name": "legal_name",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Registered legal entity name."
+        },
+        {
+          "field_name": "company_type",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Entity classification (Startup, Enterprise, Non-Profit, Research Lab)."
+        },
+        {
+          "field_name": "founding_year",
+          "type": "Optional[int]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Year of incorporation/establishment."
+        },
+        {
+          "field_name": "headquarters",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Primary city and country of headquarters."
+        },
+        {
+          "field_name": "funding_status",
+          "type": "Optional[str]",
+          "classification": "UNSPECIFIED — REQUIRES SOURCE/SPECIFICATION DECISION",
+          "description": "Funding round/stage (Seed, Series A, Public, Bootstrapped). Requires Crunchbase/Tracxn specification decision."
+        },
+        {
+          "field_name": "investors",
+          "type": "List[str]",
+          "classification": "UNSPECIFIED — REQUIRES SOURCE/SPECIFICATION DECISION",
+          "description": "Key venture capital or institutional investors. Requires source decision."
+        },
+        {
+          "field_name": "products_offered",
+          "type": "List[str]",
+          "classification": "DERIVED",
+          "description": "List of linked Tool/Model IDs produced by this company."
+        },
+        {
+          "field_name": "crunchbase_id",
+          "type": "Optional[str]",
+          "classification": "SOURCE_METADATA",
+          "description": "Unique identifier on Crunchbase."
+        }
+      ]
+    },
+    "Agents": {
+      "entity_type": "AGENT",
+      "status": "PLANNED",
+      "module_specific_fields": [
+        {
+          "field_name": "agent_type",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Agent architecture type (Autonomous, Multi-Agent System, Task Specialist, Coding Agent)."
+        },
+        {
+          "field_name": "framework",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Underlying agent framework (LangChain, AutoGen, CrewAI, LlamaIndex, Custom)."
+        },
+        {
+          "field_name": "base_model",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Default or supported underlying foundation model (e.g., GPT-4o, Claude 3.5 Sonnet, Llama-3)."
+        },
+        {
+          "field_name": "tools_used",
+          "type": "List[str]",
+          "classification": "DERIVED",
+          "description": "Linked Tool/MCP IDs accessible by this agent."
+        },
+        {
+          "field_name": "execution_environment",
+          "type": "Optional[str]",
+          "classification": "UNSPECIFIED — REQUIRES SOURCE/SPECIFICATION DECISION",
+          "description": "Deployment target (Cloud, Local CLI, Web Browser, Container). Requires spec decision."
+        },
+        {
+          "field_name": "github_stars",
+          "type": "Optional[int]",
+          "classification": "SOURCE_METADATA",
+          "description": "GitHub stargazer count if open source repository."
+        },
+        {
+          "field_name": "github_repo_url",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "GitHub repository URL if open-source agent."
+        }
+      ]
+    },
+    "MCP": {
+      "entity_type": "MCP",
+      "status": "PLANNED",
+      "module_specific_fields": [
+        {
+          "field_name": "mcp_type",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "MCP component role: Server, Client, Prompt Provider, Resource Provider."
+        },
+        {
+          "field_name": "protocol_version",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Supported Model Context Protocol version string."
+        },
+        {
+          "field_name": "transport_types",
+          "type": "List[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Supported transport layers (stdio, sse, custom)."
+        },
+        {
+          "field_name": "package_name",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Package identifier (npm, PyPI, Docker image name)."
+        },
+        {
+          "field_name": "registry_url",
+          "type": "Optional[str]",
+          "classification": "SOURCE_METADATA",
+          "description": "Registry URL where MCP server is registered (Official MCP Registry, Glama, Smithery)."
+        },
+        {
+          "field_name": "github_repo_url",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "GitHub repository URL of the MCP server code."
+        },
+        {
+          "field_name": "github_stars",
+          "type": "Optional[int]",
+          "classification": "SOURCE_METADATA",
+          "description": "GitHub stargazer count."
+        }
+      ]
+    },
+    "Models": {
+      "entity_type": "MODEL",
+      "status": "PLANNED",
+      "module_specific_fields": [
+        {
+          "field_name": "developer",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Developing organization/company (OpenAI, Anthropic, Meta, Mistral, Google)."
+        },
+        {
+          "field_name": "model_family",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Model family or architecture lineage (Llama, Claude, GPT, Mistral, Gemini)."
+        },
+        {
+          "field_name": "modalities",
+          "type": "List[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Input/output modalities (Text, Vision, Audio, Multimodal, Code, Video)."
+        },
+        {
+          "field_name": "parameter_count",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Parameter size string (e.g. 8B, 70B, 405B, Mixture-of-Experts)."
+        },
+        {
+          "field_name": "context_window",
+          "type": "Optional[int]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Maximum token context window length."
+        },
+        {
+          "field_name": "license",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "License type (Apache-2.0, MIT, Llama 3 Community, Proprietary API)."
+        },
+        {
+          "field_name": "huggingface_id",
+          "type": "Optional[str]",
+          "classification": "SOURCE_METADATA",
+          "description": "Hugging Face model repository ID (e.g. meta-llama/Llama-3.1-70B)."
+        },
+        {
+          "field_name": "benchmarks",
+          "type": "Optional[Dict[str, float]]",
+          "classification": "UNSPECIFIED — REQUIRES SOURCE/SPECIFICATION DECISION",
+          "description": "Evaluation benchmark scores (MMLU, HumanEval, GSM8K). Requires specification decision on trusted benchmark authority."
+        }
+      ]
+    },
+    "Robots": {
+      "entity_type": "ROBOT",
+      "status": "PLANNED",
+      "module_specific_fields": [
+        {
+          "field_name": "robot_type",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Form factor (Humanoid, Quadruped, Robotic Arm, Autonomous Mobile Robot)."
+        },
+        {
+          "field_name": "manufacturer",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Manufacturing company (Boston Dynamics, Tesla, Figure, Unitree, Agility Robotics)."
+        },
+        {
+          "field_name": "degrees_of_freedom",
+          "type": "Optional[int]",
+          "classification": "UNSPECIFIED — REQUIRES SOURCE/SPECIFICATION DECISION",
+          "description": "Actuation degrees of freedom. Requires specification decision."
+        },
+        {
+          "field_name": "payload_capacity_kg",
+          "type": "Optional[float]",
+          "classification": "UNSPECIFIED — REQUIRES SOURCE/SPECIFICATION DECISION",
+          "description": "Maximum payload weight capacity in kilograms. Requires spec decision."
+        },
+        {
+          "field_name": "software_stack",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Robotics OS/middleware (ROS2, Isaac ROS, Proprietary)."
+        },
+        {
+          "field_name": "commercial_status",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Availability (Research Prototype, Pre-Order, Commercial Production)."
+        }
+      ]
+    },
+    "Devices": {
+      "entity_type": "DEVICE",
+      "status": "PLANNED",
+      "module_specific_fields": [
+        {
+          "field_name": "device_category",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Device classification (AI Wearable, Smart Glasses, Edge TPU, Compute Module, Smart Speaker)."
+        },
+        {
+          "field_name": "processor_chipset",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "On-board AI silicon / SoC (NVIDIA Jetson, Qualcomm Snapdragon, Custom NPU)."
+        },
+        {
+          "field_name": "connectivity",
+          "type": "List[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Supported wireless protocols (Wi-Fi 6, 5G, Bluetooth LE, Cellular)."
+        },
+        {
+          "field_name": "battery_life_hours",
+          "type": "Optional[float]",
+          "classification": "UNSPECIFIED — REQUIRES SOURCE/SPECIFICATION DECISION",
+          "description": "Operational battery life in hours. Requires spec decision."
+        },
+        {
+          "field_name": "price_usd",
+          "type": "Optional[float]",
+          "classification": "UNSPECIFIED — REQUIRES SOURCE/SPECIFICATION DECISION",
+          "description": "MSRP retail price in USD. Requires spec decision."
+        }
+      ]
+    },
+    "News": {
+      "entity_type": "NEWS",
+      "status": "PLANNED",
+      "module_specific_fields": [
+        {
+          "field_name": "published_at",
+          "type": "datetime",
+          "classification": "MODULE_SPECIFIC",
+          "description": "ISO timestamp of article publication."
+        },
+        {
+          "field_name": "publisher_name",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Media outlet or blog publisher name."
+        },
+        {
+          "field_name": "publisher_domain",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Canonical root domain of the publisher."
+        },
+        {
+          "field_name": "author",
+          "type": "Optional[str]",
+          "classification": "OPTIONAL",
+          "description": "Article author name."
+        },
+        {
+          "field_name": "canonical_article_url",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Unique canonical article URL."
+        },
+        {
+          "field_name": "referenced_entities",
+          "type": "List[str]",
+          "classification": "DERIVED",
+          "description": "Extracted Entity IDs mentioned in article (Tools, Companies, Models)."
+        },
+        {
+          "field_name": "event_cluster_id",
+          "type": "Optional[str]",
+          "classification": "UNSPECIFIED — REQUIRES SOURCE/SPECIFICATION DECISION",
+          "description": "News topic/event cluster identifier. Requires clustering spec decision."
+        }
+      ]
+    },
+    "Repositories": {
+      "entity_type": "REPOSITORY",
+      "status": "PLANNED",
+      "module_specific_fields": [
+        {
+          "field_name": "repo_full_name",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "GitHub full repository name (e.g., owner/repo)."
+        },
+        {
+          "field_name": "owner",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "GitHub owner username or organization."
+        },
+        {
+          "field_name": "primary_language",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Primary programming language."
+        },
+        {
+          "field_name": "stars",
+          "type": "int",
+          "classification": "SOURCE_METADATA",
+          "description": "Stargazer count from GitHub API."
+        },
+        {
+          "field_name": "forks",
+          "type": "int",
+          "classification": "SOURCE_METADATA",
+          "description": "Fork count from GitHub API."
+        },
+        {
+          "field_name": "open_issues",
+          "type": "int",
+          "classification": "SOURCE_METADATA",
+          "description": "Open issue count."
+        },
+        {
+          "field_name": "license",
+          "type": "Optional[str]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Repository license identifier (e.g. MIT, Apache-2.0)."
+        },
+        {
+          "field_name": "last_commit_at",
+          "type": "Optional[datetime]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Timestamp of most recent push/commit."
+        }
+      ]
+    },
+    "Videos": {
+      "entity_type": "VIDEO",
+      "status": "PLANNED",
+      "module_specific_fields": [
+        {
+          "field_name": "video_id",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Video platform unique ID (e.g., YouTube video ID)."
+        },
+        {
+          "field_name": "channel_name",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Publishing channel display name."
+        },
+        {
+          "field_name": "channel_id",
+          "type": "str",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Platform channel ID."
+        },
+        {
+          "field_name": "duration_seconds",
+          "type": "Optional[int]",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Video duration in seconds."
+        },
+        {
+          "field_name": "view_count",
+          "type": "Optional[int]",
+          "classification": "SOURCE_METADATA",
+          "description": "Platform view count."
+        },
+        {
+          "field_name": "published_at",
+          "type": "datetime",
+          "classification": "MODULE_SPECIFIC",
+          "description": "Timestamp of video upload/publication."
+        },
+        {
+          "field_name": "transcript_summary",
+          "type": "Optional[str]",
+          "classification": "DERIVED",
+          "description": "LLM-generated summary of video transcript."
+        }
+      ]
+    }
+  }
+}

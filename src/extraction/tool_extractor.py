@@ -8,7 +8,7 @@ class ToolExtractor(BaseExtractor):
     Extracts core fields while preserving raw metadata.
     """
 
-    def extract(self, raw_item: Dict[str, Any], source_name: str) -> Dict[str, Any]:
+    def extract(self, raw_item: Dict[str, Any], source_name: str = "GitHub API") -> Dict[str, Any]:
         source_url = raw_item.get("source_url") or raw_item.get("url") or ""
         
         extracted = {

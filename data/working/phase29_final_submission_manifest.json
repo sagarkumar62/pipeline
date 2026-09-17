@@ -1,0 +1,108 @@
+{
+  "phase": "Phase 29 \u2014 Final Submission State & Reproducibility Closure",
+  "timestamp": "2026-09-17T21:48:30Z",
+  "status": "PHASE29_FINAL_SUBMISSION_READY",
+  "repository": {
+    "url": "https://github.com/sagarkumar62/pipeline",
+    "branch": "main",
+    "head_commit": "f285b061b7fe04ffa37873e27739ef2a0b85b1db",
+    "remote_commit": "f285b061b7fe04ffa37873e27739ef2a0b85b1db",
+    "synchronized": true
+  },
+  "google_spreadsheet": {
+    "id": "1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo",
+    "url": "https://docs.google.com/spreadsheets/d/1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo/edit",
+    "total_unified_records": 8318,
+    "worksheets": [
+      {
+        "title": "Tools",
+        "rows": 3500
+      },
+      {
+        "title": "Companies",
+        "rows": 509
+      },
+      {
+        "title": "Agents",
+        "rows": 911
+      },
+      {
+        "title": "MCP",
+        "rows": 475
+      },
+      {
+        "title": "Models",
+        "rows": 1424
+      },
+      {
+        "title": "Robots",
+        "rows": 656
+      },
+      {
+        "title": "Devices",
+        "rows": 337
+      },
+      {
+        "title": "Repositories",
+        "rows": 88
+      },
+      {
+        "title": "Videos",
+        "rows": 0
+      },
+      {
+        "title": "News",
+        "rows": 418
+      }
+    ]
+  },
+  "dataset_inventory": {
+    "total_physical_records": 8318,
+    "module_breakdown": {
+      "Tools": {
+        "physical_records": 3500,
+        "uniquely_resolved_entities": 2198,
+        "golden_baseline": 1304,
+        "new_expansion": 894
+      },
+      "Companies": 509,
+      "Agents": 911,
+      "MCP": 475,
+      "Models": 1424,
+      "Robots": 656,
+      "Devices": 337,
+      "Repositories": 88,
+      "Videos": 0,
+      "News": 418
+    }
+  },
+  "test_result": {
+    "total_tests": 387,
+    "passed": 387,
+    "failed": 0,
+    "errors": 0,
+    "runtime_seconds": 15.47
+  },
+  "security_result": {
+    "no_secrets_exposed": true,
+    "credentials_directory_ignored": true,
+    "env_file_ignored": true
+  },
+  "baseline_integrity": {
+    "baseline_hash_unchanged": true,
+    "protected_artifacts_changed_count": 0
+  },
+  "authorized_tools_wording": "3,500 physical Tool records accepted by the expansion pipeline, representing 2,198 uniquely resolved entities (1,304 golden baseline entities + 894 new expansion entities).",
+  "prohibited_claims": [
+    "8,318 unique entities across all modules",
+    "3,500 unique Tool entities",
+    "100% official website verification",
+    "100% logo verification",
+    "bulk LLM enrichment across all records",
+    "TAAFT automated ingestion",
+    "Creati.ai automated ingestion",
+    "Tool 100-point scoring applied",
+    "Videos populated",
+    "50K Tools completed"
+  ]
+}
