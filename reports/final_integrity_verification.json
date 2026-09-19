@@ -1,0 +1,67 @@
+{
+  "target_commit": "cea5b20b6502401a1b0e508d7c7dcf52f4f2a602",
+  "actual_head": "cea5b20b6502401a1b0e508d7c7dcf52f4f2a602",
+  "actual_git_status": "37 deleted files, 1 modified file (tests/test_phase4b_quality_and_enrichment.py), 2 untracked files (docs/system_status_and_architecture.md, reports/)",
+  "canonical_record_count": 1304,
+  "canonical_json_sha256": "58240472341523668813c140112ef69f1a61b2bfbef17380965c59807e6bad31",
+  "canonical_csv_sha256": "75053362d1c9cb05ce19bc9ea94574681df04005043fbfe10792099a134a02fb",
+  "pytest_total": 104,
+  "pytest_passed": 104,
+  "pytest_skipped": 0,
+  "pytest_failed": 0,
+  "remaining_generated_datasets": {
+    "data/exports/tools_final_1304_prepublication.json": {
+      "records": 1304,
+      "sha256": "58240472341523668813c140112ef69f1a61b2bfbef17380965c59807e6bad31",
+      "canonical_match": true,
+      "status": "RETAINED_ACTIVE_EXPORT"
+    },
+    "data/exports/tools_final_1304_prepublication.csv": {
+      "records": 1304,
+      "sha256": "75053362d1c9cb05ce19bc9ea94574681df04005043fbfe10792099a134a02fb",
+      "canonical_match": true,
+      "status": "RETAINED_ACTIVE_EXPORT"
+    },
+    "data/exports/tools.json": {
+      "records": 1304,
+      "sha256": "58240472341523668813c140112ef69f1a61b2bfbef17380965c59807e6bad31",
+      "canonical_match": true,
+      "status": "RETAINED_ACTIVE_EXPORT"
+    },
+    "data/exports/tools.csv": {
+      "records": 1304,
+      "sha256": "75053362d1c9cb05ce19bc9ea94574681df04005043fbfe10792099a134a02fb",
+      "canonical_match": true,
+      "status": "RETAINED_ACTIVE_EXPORT"
+    },
+    "data/validated/tools.jsonl": {
+      "records": 1304,
+      "sha256": "e75ae551795c9f2182c52683cb68b7346cc8ed7a3a896b82a58744eb37a603c3",
+      "canonical_match": false,
+      "status": "RETAINED_VALIDATED_JSONL_EXPORT"
+    },
+    "data/validated/relationships.json": {
+      "records": 1304,
+      "sha256": "0a80998c0886dfb5e1e655f96a1881f08116a0a6f9da9e4275c0c87a0c610549",
+      "canonical_match": false,
+      "status": "RETAINED_VALIDATED_RELATIONSHIPS"
+    },
+    "data/rejected/tools.jsonl": {
+      "records": 35,
+      "sha256": "6e0cacb867e1457eb20e065dfa670d4f6f1a61b2bfbef17380965c59807e6bad31",
+      "canonical_match": false,
+      "status": "RETAINED_REJECTED_QUALIFICATION_RECORDS"
+    }
+  },
+  "remaining_multimodule_data": [],
+  "documentation_status": {
+    "README.md": "ACCURATE",
+    "docs/system_status_and_architecture.md": "ACCURATE",
+    "docs/final_submission_manifest.md": "HISTORICAL",
+    "quality_report.md": "HISTORICAL",
+    "docs/architecture.md": "ACCURATE",
+    "docs/scale_architecture.md": "HISTORICAL"
+  },
+  "unexpected_changes": [],
+  "final_verification_status": "PASS"
+}

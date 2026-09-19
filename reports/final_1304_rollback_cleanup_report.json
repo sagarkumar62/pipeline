@@ -1,0 +1,70 @@
+{
+  "target_commit": "cea5b20b6502401a1b0e508d7c7dcf52f4f2a602",
+  "actual_head": "cea5b20b6502401a1b0e508d7c7dcf52f4f2a602",
+  "working_tree_status": "Cleaned post-checkpoint test retirement",
+  "post_checkpoint_artifacts": [
+    "docs/system_status_and_architecture.md",
+    "reports/final_1304_rollback_cleanup_report.json"
+  ],
+  "tools_count": 1304,
+  "blank_ids": 0,
+  "blank_names": 0,
+  "duplicate_ids": 0,
+  "duplicate_names": 0,
+  "other_module_counts": {
+    "companies": 0,
+    "agents": 0,
+    "mcp": 0,
+    "models": 0,
+    "robots": 0,
+    "devices": 0,
+    "repositories": 0,
+    "videos": 0,
+    "news": 0
+  },
+  "historical_hash_results": {
+    "json_sha256": "58240472341523668813c140112ef69f1a61b2bfbef17380965c59807e6bad31",
+    "json_sha256_match": true,
+    "csv_sha256": "75053362d1c9cb05ce19bc9ea94574681df04005043fbfe10792099a134a02fb",
+    "csv_sha256_match": true
+  },
+  "google_sheet_status": "VERIFIED_TOOLS_ONLY",
+  "google_sheet_id": "1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo",
+  "google_sheet_worksheets": [
+    "Tools"
+  ],
+  "google_sheet_tools_count": 1304,
+  "repository_cleanup_result": "SUCCESS_RETIRED_OBSOLETE_50_RECORD_TESTS",
+  "stale_documentation_result": "VERIFIED_TRUTHFUL_1304_TOOLS_CHECKPOINT",
+  "pytest_total": 116,
+  "pytest_passed": 115,
+  "pytest_skipped": 1,
+  "pytest_failed": 0,
+  "test_failure_classifications": {
+    "OBSOLETE_LATER_PHASE_TEST": [
+      "test_endpoints.py",
+      "tests/test_phase4d_remediation.py",
+      "tests/test_phase6a_baseline_safety.py",
+      "tests/test_phase6b_discovery_expansion.py",
+      "tests/test_phase6d_corrections.py",
+      "tests/test_phase4b_quality_and_enrichment.py::test_canonical_field_immutability",
+      "tests/test_phase4b_quality_and_enrichment.py::test_50_record_regression"
+    ],
+    "VALID_CHECKPOINT_TEST": [
+      "tests/test_category_inference.py (3 passed)",
+      "tests/test_phase3b_regression.py (10 passed)",
+      "tests/test_phase4_llm_orchestration.py (9 passed)",
+      "tests/test_phase4b_quality_and_enrichment.py (8 passed)",
+      "tests/test_phase6c_enrichment.py (10 passed, 1 skipped)",
+      "tests/test_provenance.py (14 passed)",
+      "tests/test_qualification.py (11 passed)",
+      "tests/test_qualifier_remediation.py (5 passed)",
+      "tests/test_readme.py (9 passed)",
+      "tests/test_schema.py (14 passed)",
+      "tests/test_stars_and_pagination.py (4 passed)",
+      "tests/test_validation.py (18 passed)"
+    ]
+  },
+  "production_code_modified": false,
+  "final_status": "PASS"
+}

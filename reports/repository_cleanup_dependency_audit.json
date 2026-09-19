@@ -1,0 +1,632 @@
+{
+  "target_commit": "cea5b20b6502401a1b0e508d7c7dcf52f4f2a602",
+  "canonical_dataset_hashes": {
+    "json_sha256": "58240472341523668813c140112ef69f1a61b2bfbef17380965c59807e6bad31",
+    "csv_sha256": "75053362d1c9cb05ce19bc9ea94574681df04005043fbfe10792099a134a02fb"
+  },
+  "pytest_baseline": "115 passed, 1 skipped, 0 failed",
+  "files_by_classification": {
+    "KEEP_ACTIVE": [
+      {
+        "file_path": "data\\working\\phase6c_checkpoint.json",
+        "git_status": "tracked",
+        "reason": "Active checkpoint referenced in README.md and scripts/run_phase6c_pipeline.py.",
+        "references_count": 5
+      },
+      {
+        "file_path": "data\\working\\baseline_manifest.json",
+        "git_status": "tracked",
+        "reason": "Loaded by src/validation/baseline.py for canonical baseline verification.",
+        "references_count": 1
+      }
+    ],
+    "KEEP_DOCUMENTATION": [
+      {
+        "file_path": "data\\working\\phase6d_correction_manifest.json",
+        "git_status": "tracked",
+        "reason": "Correction manifest referenced by data/working/phase8_artifact_inventory.md.",
+        "references_count": 1
+      },
+      {
+        "file_path": "data\\working\\phase6d_correction_report.md",
+        "git_status": "tracked",
+        "reason": "Correction report referenced by data/working/phase8_artifact_inventory.md.",
+        "references_count": 1
+      },
+      {
+        "file_path": "data\\working\\phase0_submission_scope_freeze.md",
+        "git_status": "tracked",
+        "reason": "Submission scope freeze documentation.",
+        "references_count": 0
+      },
+      {
+        "file_path": "data\\working\\phase1_repository_hygiene_audit.md",
+        "git_status": "tracked",
+        "reason": "Repository hygiene audit documentation.",
+        "references_count": 0
+      },
+      {
+        "file_path": "data\\working\\phase7_final_submission_audit.md",
+        "git_status": "tracked",
+        "reason": "Final submission audit document referenced by phase7a and phase8.",
+        "references_count": 3
+      },
+      {
+        "file_path": "data\\working\\phase7a_submission_hygiene_report.md",
+        "git_status": "tracked",
+        "reason": "Submission hygiene report referenced by phase8 and phase9.",
+        "references_count": 2
+      },
+      {
+        "file_path": "data\\working\\phase8_artifact_inventory.md",
+        "git_status": "tracked",
+        "reason": "Artifact inventory document referenced by phase8 and phase9.",
+        "references_count": 2
+      },
+      {
+        "file_path": "data\\working\\phase8_evaluation_readiness_checklist.md",
+        "git_status": "tracked",
+        "reason": "Evaluation readiness checklist referenced by phase8.",
+        "references_count": 1
+      },
+      {
+        "file_path": "data\\working\\phase8_project_documentation_audit.md",
+        "git_status": "tracked",
+        "reason": "Project documentation audit referenced by phase8 and phase9.",
+        "references_count": 2
+      },
+      {
+        "file_path": "data\\working\\phase9_final_completion_audit.md",
+        "git_status": "tracked",
+        "reason": "Final completion audit document.",
+        "references_count": 0
+      },
+      {
+        "file_path": "docs\\phase4a_real_llm_validation.md",
+        "git_status": "tracked",
+        "reason": "Historical Phase 4a LLM validation report.",
+        "references_count": 1
+      },
+      {
+        "file_path": "docs\\phase4b_enrichment_report.md",
+        "git_status": "tracked",
+        "reason": "Historical Phase 4b enrichment report.",
+        "references_count": 1
+      },
+      {
+        "file_path": "docs\\phase4c_description_audit.csv",
+        "git_status": "tracked",
+        "reason": "Historical Phase 4c description audit CSV.",
+        "references_count": 2
+      },
+      {
+        "file_path": "docs\\phase4c_final_forensic_audit.md",
+        "git_status": "tracked",
+        "reason": "Historical Phase 4c forensic audit report.",
+        "references_count": 1
+      },
+      {
+        "file_path": "docs\\phase4d_description_remediation.csv",
+        "git_status": "tracked",
+        "reason": "Historical Phase 4d description remediation CSV.",
+        "references_count": 5
+      },
+      {
+        "file_path": "docs\\phase4d_description_remediation.md",
+        "git_status": "tracked",
+        "reason": "Historical Phase 4d description remediation report.",
+        "references_count": 2
+      },
+      {
+        "file_path": "docs\\phase5_blocking_issues.json",
+        "git_status": "tracked",
+        "reason": "Historical Phase 5 blocking issues report.",
+        "references_count": 2
+      },
+      {
+        "file_path": "docs\\phase5_final_dataset_audit.csv",
+        "git_status": "tracked",
+        "reason": "Historical Phase 5 final dataset audit CSV.",
+        "references_count": 3
+      },
+      {
+        "file_path": "docs\\phase5_final_dataset_audit.md",
+        "git_status": "tracked",
+        "reason": "Historical Phase 5 final dataset audit report.",
+        "references_count": 3
+      },
+      {
+        "file_path": "docs\\phase5a_reconciliation.json",
+        "git_status": "tracked",
+        "reason": "Historical Phase 5a reconciliation JSON.",
+        "references_count": 2
+      },
+      {
+        "file_path": "docs\\phase5a_reconciliation.md",
+        "git_status": "tracked",
+        "reason": "Historical Phase 5a reconciliation Markdown.",
+        "references_count": 2
+      },
+      {
+        "file_path": "docs\\phase5a_url_logo_audit.csv",
+        "git_status": "tracked",
+        "reason": "Historical Phase 5a URL/logo audit CSV.",
+        "references_count": 1
+      },
+      {
+        "file_path": "quality_report.md",
+        "git_status": "tracked",
+        "reason": "Project quality report referenced by scripts/run.py and commit history.",
+        "references_count": 1
+      },
+      {
+        "file_path": "docs\\architecture.md",
+        "git_status": "tracked",
+        "reason": "System architecture specification document.",
+        "references_count": 1
+      },
+      {
+        "file_path": "docs\\scale_architecture.md",
+        "git_status": "tracked",
+        "reason": "Scale architecture specification document.",
+        "references_count": 1
+      }
+    ],
+    "KEEP_FOR_REPRODUCIBILITY": [
+      {
+        "file_path": "scratch\\validate_final_package.py",
+        "git_status": "tracked",
+        "reason": "Standalone submission package verification utility.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scripts\\run_phase4a.py",
+        "git_status": "untracked",
+        "reason": "Historical Phase 4a LLM validation runner script for pipeline execution lineage.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scripts\\run_phase4b.py",
+        "git_status": "untracked",
+        "reason": "Historical Phase 4b enrichment runner script for pipeline execution lineage.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scripts\\run_phase4d.py",
+        "git_status": "untracked",
+        "reason": "Historical Phase 4d description remediation runner script referenced in docs/phase5a_reconciliation.md.",
+        "references_count": 2
+      },
+      {
+        "file_path": "scripts\\run_phase6b_expansion.py",
+        "git_status": "untracked",
+        "reason": "Historical Phase 6b discovery expansion runner script for pipeline execution lineage.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scripts\\run_phase6b_remediation.py",
+        "git_status": "untracked",
+        "reason": "Historical Phase 6b remediation runner script for pipeline execution lineage.",
+        "references_count": 0
+      },
+      {
+        "file_path": "data\\audits\\phase_3b_audit.jsonl",
+        "git_status": "tracked",
+        "reason": "Audit log referenced by quality_report.md and scripts/run.py baseline auditor.",
+        "references_count": 3
+      },
+      {
+        "file_path": "data\\working\\expansion_candidates.jsonl",
+        "git_status": "tracked",
+        "reason": "Historical candidate store dump referenced by phase runners.",
+        "references_count": 2
+      },
+      {
+        "file_path": "data\\working\\expansion_candidates_remediated.jsonl",
+        "git_status": "tracked",
+        "reason": "Remediated candidate store dump referenced by remediation runner.",
+        "references_count": 1
+      },
+      {
+        "file_path": "data\\working\\expansion_checkpoint.json",
+        "git_status": "tracked",
+        "reason": "Phase 6b discovery checkpoint referenced by docs/scale_architecture.md.",
+        "references_count": 3
+      },
+      {
+        "file_path": "data\\working\\expansion_remediation_summary.json",
+        "git_status": "tracked",
+        "reason": "Remediation summary log referenced by remediation runner.",
+        "references_count": 1
+      },
+      {
+        "file_path": "data\\working\\phase6c_domain_collision_audit.json",
+        "git_status": "tracked",
+        "reason": "Audit log referenced by scripts/run_phase6c_pipeline.py and tests/test_phase6c_enrichment.py.",
+        "references_count": 2
+      },
+      {
+        "file_path": "data\\working\\phase6c_enrichment_report.json",
+        "git_status": "tracked",
+        "reason": "Enrichment report log referenced by scripts/run_phase6c_pipeline.py.",
+        "references_count": 1
+      },
+      {
+        "file_path": "data\\working\\phase6c_quality_audit.json",
+        "git_status": "tracked",
+        "reason": "Quality audit log referenced by scripts/run_phase6c_pipeline.py.",
+        "references_count": 1
+      },
+      {
+        "file_path": "data\\working\\phase6c_review_items.jsonl",
+        "git_status": "tracked",
+        "reason": "Review items store referenced by scripts/run_phase6c_pipeline.py.",
+        "references_count": 1
+      },
+      {
+        "file_path": "data\\working\\tools_expanded_500.json",
+        "git_status": "tracked",
+        "reason": "500 tools expansion working dataset referenced by scripts/run_phase6b_expansion.py.",
+        "references_count": 1
+      },
+      {
+        "file_path": "data\\working\\tools_expanded_500_remediated.json",
+        "git_status": "tracked",
+        "reason": "500 tools remediated dataset referenced by scripts/run_phase6c_pipeline.py.",
+        "references_count": 2
+      },
+      {
+        "file_path": "data\\working\\tools_phase6c_enriched.json",
+        "git_status": "tracked",
+        "reason": "Enriched tools working dataset referenced by scripts/run_phase6c_pipeline.py.",
+        "references_count": 3
+      }
+    ],
+    "DELETE_SAFE": [
+      {
+        "file_path": "scratch\\audit_phase4c.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\audit_phase5.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\audit_phase5a.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\audit_six_items.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\audit_urls.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\check_exports.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\check_fields.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\check_tools_json.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\create_final_google_sheet_csv.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\generate_phase5_audit.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\generate_phase5a_artifacts.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\inspect_9_records.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\inspect_raw.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\inspect_samples.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\match_readmes.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\print_reviews.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\sample_15.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\select_group1.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\test_endpoints.py",
+        "git_status": "untracked",
+        "reason": "Standalone scratch test script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "scratch\\verify_phase4d.py",
+        "git_status": "tracked",
+        "reason": "Standalone scratch script; 0 references in active codebase, documentation, or tests.",
+        "references_count": 0
+      },
+      {
+        "file_path": "data\\working\\phase6b_unaccounted_candidates.jsonl",
+        "git_status": "tracked",
+        "reason": "Unaccounted candidate log; 0 references in active codebase or documentation.",
+        "references_count": 0
+      },
+      {
+        "file_path": "data\\working\\phase6d_final_inventory.json",
+        "git_status": "tracked",
+        "reason": "Intermediate phase 6d inventory; 0 references in active codebase or documentation.",
+        "references_count": 0
+      },
+      {
+        "file_path": "data\\working\\phase6d_final_manifest.json",
+        "git_status": "tracked",
+        "reason": "Intermediate phase 6d manifest; 0 references in active codebase or documentation.",
+        "references_count": 0
+      },
+      {
+        "file_path": "data\\working\\phase6d_publication_report.json",
+        "git_status": "tracked",
+        "reason": "Intermediate phase 6d publication report; 0 references in active codebase or documentation.",
+        "references_count": 0
+      },
+      {
+        "file_path": "data\\working\\phase6d_review_decisions.jsonl",
+        "git_status": "tracked",
+        "reason": "Intermediate phase 6d review decisions log; 0 references in active codebase or documentation.",
+        "references_count": 0
+      }
+    ],
+    "NEEDS_MANUAL_REVIEW": [
+      {
+        "file_path": "scratch\\test_sheets_connect.py",
+        "git_status": "tracked",
+        "reason": "Standalone Google Sheets connectivity testing utility. Useful for verifying live service account credentials.",
+        "references_count": 0
+      }
+    ]
+  },
+  "references_found": {
+    "scratch\\audit_phase4c.py": [],
+    "scratch\\audit_phase5.py": [],
+    "scratch\\audit_phase5a.py": [],
+    "scratch\\audit_six_items.py": [],
+    "scratch\\audit_urls.py": [],
+    "scratch\\check_exports.py": [],
+    "scratch\\check_fields.py": [],
+    "scratch\\check_tools_json.py": [],
+    "scratch\\create_final_google_sheet_csv.py": [],
+    "scratch\\generate_phase5_audit.py": [],
+    "scratch\\generate_phase5a_artifacts.py": [],
+    "scratch\\inspect_9_records.py": [],
+    "scratch\\inspect_raw.py": [],
+    "scratch\\inspect_samples.py": [],
+    "scratch\\match_readmes.py": [],
+    "scratch\\print_reviews.py": [],
+    "scratch\\sample_15.py": [],
+    "scratch\\select_group1.py": [],
+    "scratch\\test_endpoints.py": [],
+    "scratch\\test_sheets_connect.py": [],
+    "scratch\\validate_final_package.py": [],
+    "scratch\\verify_phase4d.py": [],
+    "scripts\\run_phase4a.py": [],
+    "scripts\\run_phase4b.py": [],
+    "scripts\\run_phase4d.py": [
+      "docs\\phase5a_reconciliation.md",
+      "scratch\\generate_phase5a_artifacts.py"
+    ],
+    "scripts\\run_phase6b_expansion.py": [],
+    "scripts\\run_phase6b_remediation.py": [],
+    "data\\audits\\phase_3b_audit.jsonl": [
+      "quality_report.md",
+      "run.py",
+      "src\\audit\\auditor.py"
+    ],
+    "data\\working\\expansion_candidates.jsonl": [
+      "run_phase6b_expansion.py",
+      "run_phase6b_remediation.py"
+    ],
+    "data\\working\\expansion_candidates_remediated.jsonl": [
+      "run_phase6b_remediation.py"
+    ],
+    "data\\working\\expansion_checkpoint.json": [
+      "run_phase6b_expansion.py",
+      "docs\\scale_architecture.md",
+      "src\\storage\\repository.py"
+    ],
+    "data\\working\\expansion_remediation_summary.json": [
+      "run_phase6b_remediation.py"
+    ],
+    "data\\working\\phase6b_unaccounted_candidates.jsonl": [],
+    "data\\working\\phase6c_checkpoint.json": [
+      "README.md",
+      "run_phase6c_pipeline.py",
+      "data\\working\\phase7_final_submission_audit.md",
+      "data\\working\\phase8_evaluation_readiness_checklist.md",
+      "data\\working\\phase9_final_completion_audit.md"
+    ],
+    "data\\working\\phase6c_domain_collision_audit.json": [
+      "run_phase6c_pipeline.py",
+      "tests\\test_phase6c_enrichment.py"
+    ],
+    "data\\working\\phase6c_enrichment_report.json": [
+      "run_phase6c_pipeline.py"
+    ],
+    "data\\working\\phase6c_quality_audit.json": [
+      "run_phase6c_pipeline.py"
+    ],
+    "data\\working\\phase6c_review_items.jsonl": [
+      "run_phase6c_pipeline.py"
+    ],
+    "data\\working\\phase6d_correction_manifest.json": [
+      "data\\working\\phase8_artifact_inventory.md"
+    ],
+    "data\\working\\phase6d_correction_report.md": [
+      "data\\working\\phase8_artifact_inventory.md"
+    ],
+    "data\\working\\phase6d_final_inventory.json": [],
+    "data\\working\\phase6d_final_manifest.json": [],
+    "data\\working\\phase6d_publication_report.json": [],
+    "data\\working\\phase6d_review_decisions.jsonl": [],
+    "data\\working\\tools_expanded_500.json": [
+      "run_phase6b_expansion.py"
+    ],
+    "data\\working\\tools_expanded_500_remediated.json": [
+      "run_phase6b_remediation.py",
+      "run_phase6c_pipeline.py"
+    ],
+    "data\\working\\tools_phase6c_enriched.json": [
+      "run_phase6c_pipeline.py",
+      "data\\working\\phase8_artifact_inventory.md",
+      "tests\\test_phase6c_enrichment.py"
+    ],
+    "data\\working\\phase0_submission_scope_freeze.md": [],
+    "data\\working\\phase1_repository_hygiene_audit.md": [],
+    "data\\working\\phase7_final_submission_audit.md": [
+      "data\\working\\phase7a_submission_hygiene_report.md",
+      "data\\working\\phase8_artifact_inventory.md",
+      "data\\working\\phase9_final_completion_audit.md"
+    ],
+    "data\\working\\phase7a_submission_hygiene_report.md": [
+      "data\\working\\phase8_artifact_inventory.md",
+      "data\\working\\phase9_final_completion_audit.md"
+    ],
+    "data\\working\\phase8_artifact_inventory.md": [
+      "data\\working\\phase8_evaluation_readiness_checklist.md",
+      "data\\working\\phase8_project_documentation_audit.md"
+    ],
+    "data\\working\\phase8_evaluation_readiness_checklist.md": [
+      "data\\working\\phase8_artifact_inventory.md"
+    ],
+    "data\\working\\phase8_project_documentation_audit.md": [
+      "data\\working\\phase8_artifact_inventory.md",
+      "data\\working\\phase9_final_completion_audit.md"
+    ],
+    "data\\working\\phase9_final_completion_audit.md": [],
+    "docs\\phase4a_real_llm_validation.md": [
+      "run_phase4a.py"
+    ],
+    "docs\\phase4b_enrichment_report.md": [
+      "run_phase4b.py"
+    ],
+    "docs\\phase4c_description_audit.csv": [
+      "docs\\phase4c_final_forensic_audit.md",
+      "scratch\\audit_phase4c.py"
+    ],
+    "docs\\phase4c_final_forensic_audit.md": [
+      "docs\\final_submission_manifest.md"
+    ],
+    "docs\\phase4d_description_remediation.csv": [
+      "run_phase4d.py",
+      "docs\\phase5a_reconciliation.json",
+      "docs\\phase5a_reconciliation.md",
+      "scratch\\audit_phase5a.py",
+      "scratch\\generate_phase5a_artifacts.py"
+    ],
+    "docs\\phase4d_description_remediation.md": [
+      "run_phase4d.py",
+      "docs\\final_submission_manifest.md"
+    ],
+    "docs\\phase5_blocking_issues.json": [
+      "scratch\\audit_phase5.py",
+      "scratch\\generate_phase5_audit.py"
+    ],
+    "docs\\phase5_final_dataset_audit.csv": [
+      "scratch\\audit_phase5.py",
+      "scratch\\generate_phase5_audit.py",
+      "scratch\\print_reviews.py"
+    ],
+    "docs\\phase5_final_dataset_audit.md": [
+      "docs\\final_submission_manifest.md",
+      "scratch\\audit_phase5.py",
+      "scratch\\generate_phase5_audit.py"
+    ],
+    "docs\\phase5a_reconciliation.json": [
+      "docs\\final_submission_manifest.md",
+      "scratch\\generate_phase5a_artifacts.py"
+    ],
+    "docs\\phase5a_reconciliation.md": [
+      "docs\\final_submission_manifest.md",
+      "scratch\\generate_phase5a_artifacts.py"
+    ],
+    "docs\\phase5a_url_logo_audit.csv": [
+      "scratch\\generate_phase5a_artifacts.py"
+    ],
+    "data\\working\\baseline_manifest.json": [
+      "src\\validation\\baseline.py"
+    ],
+    "quality_report.md": [
+      "run.py"
+    ],
+    "docs\\architecture.md": [
+      "data\\working\\phase9_final_completion_audit.md"
+    ],
+    "docs\\scale_architecture.md": [
+      "data\\working\\phase9_final_completion_audit.md"
+    ]
+  },
+  "manual_review_items": {
+    "scratch\\test_sheets_connect.py": {
+      "git_status": "tracked",
+      "reason": "Standalone Google Sheets connectivity testing utility. Useful for verifying live service account credentials.",
+      "references": []
+    }
+  }
+}

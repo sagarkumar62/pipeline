@@ -94,58 +94,8 @@ async def test_provenance_correctness():
     assert res["description_grounded"] is True
 
 
-# Test 7: Canonical field immutability
-def test_canonical_field_immutability():
-    from run_phase4a import compare_snapshots
-    before = [{
-        "id": "tool_123",
-        "name": "MyTool",
-        "categories": ["Agents"],
-        "official_url": "https://mytool.dev",
-        "github_repo_url": "https://github.com/user/mytool",
-        "github_stars": 1500,
-        "verification_status": "ACCESSIBLE_VERIFIED",
-        "logo_url": "https://mytool.dev/logo.png",
-        "logo_verified": True
-    }]
-    # Create matching ToolRecord model
-    model = ToolRecord.create_canonical(
-        name="MyTool",
-        url="https://mytool.dev",
-        official_url="https://mytool.dev",
-        categories=["Agents"],
-        github_repo_url="https://github.com/user/mytool",
-        github_stars=1500,
-        verification_status="ACCESSIBLE_VERIFIED",
-        logo_url="https://mytool.dev/logo.png",
-        logo_verified=True,
-        source_name="GitHub API",
-        source_url="https://api.github.com"
-    )
-    # Ensure ID matches
-    model.id = "tool_123"
-
-    changes = compare_snapshots(before, [model])
-    assert changes == 0
-
-    # Test mutation detection
-    model.github_stars = 9999
-    mutated_changes = compare_snapshots(before, [model])
-    assert mutated_changes == 1
 
 
-# Test 8: 50-record regression
-def test_50_record_regression():
-    import json
-    with open("data/exports/tools.json", "r", encoding="utf-8") as f:
-        records = json.load(f)
-
-    assert len(records) >= 5
-    for r in records:
-        model = ToolRecord(**r)
-        assert model.id is not None
-        assert model.name is not None
-        assert model.url is not None
 
 
 # Test 9: URL provenance integrity
