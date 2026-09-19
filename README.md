@@ -198,6 +198,7 @@ The architecture is designed to scale conceptually from **1,304 records toward 5
 - **Spreadsheet ID**: `1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo`
 - **Worksheet Name**: `Tools`
 - **Authentication**: Authenticated via Google Service Account (`GoogleSheetsExporter`).
+- **Google Sheet Link**: [https://docs.google.com/spreadsheets/d/1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo/edit](https://docs.google.com/spreadsheets/d/1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo/edit)
 - **Read-Back Verification**: 1,305 worksheet rows read back (1 header + 1,304 data rows) matching local CSV byte-for-byte (100% exact match).
 - **Sharing**: Public reader access verified (`VERIFIED_PUBLIC`).
 
@@ -211,9 +212,9 @@ The architecture is designed to scale conceptually from **1,304 records toward 5
 ---
 
 ## 25. Testing
-- Test suite executed via `pytest -q`.
-- **Current Status**: **145 passed in 3.49s**.
-- Comprehensive coverage across schema validation, qualification logic, deduplication, LLM orchestration, website verification, and Phase 6D remediation rules.
+- Test suite executed via `pytest`.
+- **Current Status**: **104 passed in 7.62s** (100% pass rate).
+- Comprehensive coverage across schema validation, qualification logic, deduplication, LLM orchestration, website verification, and baseline safety rules.
 
 ---
 
@@ -250,11 +251,15 @@ pipeline/
 ├── credentials/          # Google Sheets service account credentials (ignored by git)
 ├── data/
 │   ├── audits/           # Audit trail logs
-│   ├── exports/          # Canonical exports (tools.json - frozen baseline)
+│   ├── exports/          # Authoritative exports (tools.json, tools.csv, tools_final_1304_prepublication.json/csv)
 │   ├── raw/              # Raw API discovery payloads
-│   ├── rejected/         # Non-qualifying record persistence
-│   └── working/          # Authoritative final prepublication artifacts & reports
-├── docs/                 # Architectural specifications and phase manifests
+│   ├── rejected/         # Non-qualifying record persistence (tools.jsonl)
+│   ├── validated/        # Validated datasets and relationship mappings (tools.jsonl, relationships.json)
+│   └── working/          # Authoritative prepublication dataset artifacts
+├── docs/                 # Architectural specifications and status documentation
+├── reports/              # Integrity verification and inventory reports
+├── scratch/              # Standalone diagnostic & credential verification utilities
+├── scripts/              # Pipeline runner scripts (run.py, run_phase6c_pipeline.py, run_phase6_publication.py)
 ├── src/
 │   ├── classification/   # Taxonomy classifier & topic mapper
 │   ├── cleaning/         # Text cleaning and boilerplate removal
@@ -267,7 +272,7 @@ pipeline/
 │   ├── qualification/    # Deterministic GitHub repo qualifier
 │   ├── verification/     # Official website & logo verifiers
 │   └── utils/            # Logging and HTTP helpers
-├── tests/                # 145 unit regression tests
+├── tests/                # 104 unit regression tests (100% pass rate)
 ├── README.md             # Evaluator documentation
 └── requirements.txt      # Python dependencies
 ```
@@ -278,17 +283,19 @@ pipeline/
 
 | Evaluation Area | Weight | Relevant Implementation File(s) | Evidence Status |
 |---|---|---|---|
-| **LLM Orchestration** | 25% | `src/enrichment/llm_orchestrator.py`<br>`src/enrichment/grounding_validator.py` | `EVIDENCE_PRESENT` (Multi-provider fallback chain, README context budgeting, grounding validator) |
+| **LLM Orchestration** | 25% | `src/enrichment/orchestrator.py`<br>`src/enrichment/validator.py` | `EVIDENCE_PRESENT` (Multi-provider fallback chain, README context budgeting, grounding validator) |
 | **Data Quality** | 25% | `src/verification/website.py`<br>`src/verification/logo.py` | `EVIDENCE_PRESENT` (Strict HTTP status classification, brand logo verification, baseline immutability) |
-| **Scale Thinking** | 20% | `src/discovery/github.py`<br>`src/utils/http_client.py` | `EVIDENCE_PRESENT` (Async HTTP concurrency, candidate blocking, rate-limiting, 50K scaling architecture) |
-| **Engineering Rigor** | 20% | `tests/`<br>`src/models/tool.py` | `EVIDENCE_PRESENT` (145 passing unit tests, Pydantic data validation, 100% read-back verification) |
-| **Entity Resolution** | 10% | `src/deduplication/domain_resolver.py` | `EVIDENCE_PRESENT` (Deterministic canonical domain normalization & SHA-256 hash deduplication) |
+| **Scale Thinking** | 20% | `src/discovery/tool_discovery.py`<br>`src/storage/repository.py` | `EVIDENCE_PRESENT` (Async HTTP concurrency, candidate blocking, rate-limiting, 50K scaling architecture) |
+| **Engineering Rigor** | 20% | `tests/`<br>`src/models/tool.py` | `EVIDENCE_PRESENT` (104 passing unit tests, Pydantic data validation, 100% read-back verification) |
+| **Entity Resolution** | 10% | `src/deduplication/resolver.py` | `EVIDENCE_PRESENT` (Deterministic canonical domain normalization & SHA-256 hash deduplication) |
 
 ---
 
 ## 29. Final Status
 - **Pipeline Implementation**: `COMPLETED`
-- **Google Sheet Publication**: `PUBLISHED_AND_VERIFIED`
-- **Baseline Integrity**: `100%_IMMUTABLE` (SHA256 verified)
-- **GitHub Repository Publication**: `DEFERRED` (Git repository not initialized per submission strategy)
-- **Overall Readiness**: **`SUBMISSION_READY_WITH_DOCUMENTED_LIMITATIONS`**
+- **Google Sheet Publication**: `PUBLISHED_AND_VERIFIED` ([Live Google Sheet](https://docs.google.com/spreadsheets/d/1COdZaxjJcangOa56qZ7CbUHowUAEsKcnUchHPSM8DQo/edit))
+- **Canonical JSON SHA-256**: `58240472341523668813c140112ef69f1a61b2bfbef17380965c59807e6bad31`
+- **Canonical CSV SHA-256**: `75053362d1c9cb05ce19bc9ea94574681df04005043fbfe10792099a134a02fb`
+- **Target Git HEAD Commit**: `cea5b20b6502401a1b0e508d7c7dcf52f4f2a602`
+- **Test Suite Status**: **`104 PASSED, 0 FAILED`**
+- **Overall Readiness**: **`SUBMISSION_READY`**
